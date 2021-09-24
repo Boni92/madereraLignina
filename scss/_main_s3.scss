@@ -1,0 +1,179 @@
+$margin-basic: 20px;
+$color-table: rgb(32, 30, 30);
+$color-border: rgb(199, 133, 11);
+$margin-table: 0.5em 1em 0.5em 0;
+$azulgris: rgba(126, 106, 218, 0.671);
+$amarillogris: rgba(236, 182, 83, 0.671);
+$rojogris: rgba(182, 67, 67, 0.705);
+$blancogris: rgba(255, 255, 255, 0.3);
+$size: 2;
+
+@for $i from 2 to 4 {
+    h#{$i} {
+        color: $color-table;
+        font-size: initial/$i;
+        @if $i == 3 {
+            font-style: italic;
+        }
+    }
+}
+
+$colores: ( /*Declaro mapa*/
+    azulg: rgba(126, 106, 218, 0.671),
+    amarillog: rgba(236, 182, 83, 0.671),
+    rojog: rgba(182, 67, 67, 0.705),
+    blancog: rgba(255, 255, 255, 0.3)
+); 
+
+@each $color, $rgb in $colores {
+    .fondo-#{$color} {
+        background-color: $rgb;
+        border-radius: 5px;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        max-width: 50%;
+        max-height: 50%;
+        padding: 15px 15px;
+    }
+    .fonto-ventasantiguas{
+        @extend .fondo-#{$color};
+        background-color:rgba(0, 0, 0, 0.424);
+        padding: 8px 8px;
+    }
+}
+
+@mixin tabla($margin, $color) {
+    margin: $margin !important;
+    color: $color !important;
+}
+
+@mixin lados($ancho, $alto) {
+    height: $alto !important;
+    width: $ancho !important;
+}
+.lados-base {
+    @include lados(400px, auto);
+}
+.lados-pples{
+    @include lados(500px, auto);
+}
+
+#mains3{
+    div{
+        margin-bottom: $margin-basic;
+        ~div{
+            margin-bottom: $margin-basic/2;
+            
+        }
+        #titulos3{
+            width: 100%;
+        }
+        #contppal{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: rgba(122, 86, 17, 0.781);
+            border-radius: 10px;
+            padding: 3px 12px 0 12px;
+
+            #textos3{
+                margin-bottom: 0;
+                
+            }
+        }
+        #imgs3{
+            margin-bottom: $margin-basic/4;
+        }
+        div{
+            table{
+                border: solid 1px $color-border;
+                tr{
+                    td{
+                        border: solid 1px $color-border;
+                        color: $color-table !important;
+                        @include tabla($margin-table, $color-table);
+                        ul{
+                            margin: $margin-table!important;
+                            li{
+                                color: $color-table;
+                            }
+                        }
+                        ol{
+                            margin: $margin-table!important;
+                            li{
+                                color: $color-table;
+                            }
+                        }
+                    }
+                    th{
+                        color: $color-table;
+                    }
+                    
+                }
+            }
+        }
+        #linkcomprar{
+            a{
+                text-decoration: none;
+            }
+            
+        }
+    }
+    #ventasemana{
+        #contppal{
+            h3{
+                color: darken($color: #000000, $amount: 0.9)
+            }
+        }
+    }
+    #ventasantiguass3{
+        #contventas{
+            background-color: rgba(255, 238, 205, 0.781);
+            border-radius: 10px;
+            padding: 1px 12px 0 12px;
+            >div{
+                margin-top: ($margin-basic)-10;
+                margin-bottom: ($margin-basic)-5;
+                // border: solid 1px black;
+                border-bottom: solid 1px rgb(88, 87, 84);
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                div{
+                    margin-bottom: 5px;
+                }
+            }
+            #ventaD{
+                border-bottom: none;
+            }
+        }
+        #tituloantiguos3{
+            padding-top: $margin-basic;
+            text-align: left;
+        }
+    }
+    p{
+        @if $size == 1 {
+            font-weight: bolder;
+        }
+        @else if $size == 2{
+            font-weight: lighter;
+        }
+        @else {
+            font-weight: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+

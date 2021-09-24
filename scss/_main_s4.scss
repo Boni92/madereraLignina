@@ -1,0 +1,41 @@
+#mains4{
+    
+    div{
+        #intro{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+        }
+        #consejos{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+            div{
+                margin: 0px 0 10px 0;
+                
+            }
+            #tyt{
+                padding: 0 10px 0 10px;
+                div{
+                    p{
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+        #titulo{
+            h2{
+                font-weight: bold;
+                color: $color-basic;
+            }
+        }
+        #intro{
+            p{
+                font-size: 110%;
+                color: $color-basic;
+            }
+            border-bottom: solid;
+            border-width: 1em;
+            border-color: rgb(87, 63, 26);
+        }
+        
+    }
+}
