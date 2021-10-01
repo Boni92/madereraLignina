@@ -1,0 +1,252 @@
+main{
+    
+    p{
+        font-style: normal;
+        font-weight: lighter;
+        font-size: medium;
+        text-align: left;
+        text-transform: none;
+        line-height: 25px;
+        text-decoration: wavy;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        color: rgb(0, 0, 0);
+    }
+    span{
+        font-style: normal;
+        font-weight: lighter;
+        font-size: medium;
+        line-height: 25px;
+        letter-spacing: 0px;
+        word-spacing: 1px;
+        color: rgb(0, 0, 0);
+    }
+    .ache2{
+        color: #554415 ;    
+    }
+    .ache3{
+        color: #62462c;
+    }
+    .ache4{
+        color: #464544; 
+        font-size: 12px; 
+        font-weight: auto; 
+        text-align: left; 
+        background: rgba(195, 143, 45, 0.541); 
+        margin: 0 0 50px; 
+        padding: 7px; 
+        border-radius: 35px 35px 35px 35px; 
+        
+    }
+    .alineacion{
+        text-align: justify;
+        text-decoration: none;
+        text-transform: none;
+    }
+    .spanespecial{
+        font-style: normal;
+        font-weight: lighter;
+        font-size: medium;
+        line-height: 39px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        color: rgb(20, 20, 92);
+        margin: 0 1vw 0 1vw;
+    }
+    .parrafo1{
+        text-align: center;
+    }
+    section{
+        div{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    #seccionnosotros{
+        margin-top: 10px;
+        border: solid 5px #804000;
+        padding: 0 10px 0 5px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        div{
+            .imagen{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                height: auto;
+                margin-bottom: 5px;
+            }
+            .video{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 60%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    #seccioncatego{
+        margin-bottom: 20px;
+        border-right: dotted 5px #804000;
+        border-left: dotted 5px #804000;
+        padding: 0px;
+        position: relative;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        div{
+            div{
+                padding: 10px;
+            
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+            } 
+        }
+        
+    }
+    .contenedors2{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        .hijos2{
+            position: absolute;
+            
+            transition: all 1s ease-in-out;
+            .ache3{
+                color: beige;
+                font-family: 'Open Sans', sans-serif;
+                font-style: italic;
+                margin: 0;
+            }
+        }
+    }
+    .contenedors2:hover .hijos2{
+        background-color: #62462ce5;
+        border-radius: 350px;
+        z-index: 1000;
+    }
+    #seccionventa{
+        border: solid 5px #804000;
+        padding: 0 10px 0 5px;
+        margin: 0 0 5px 0;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div{
+            h2{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            table{
+                width: 85vmax;
+                border: 1px solid rgb(199, 133, 11);
+                border-spacing: 0;
+                border-collapse: collapse;
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+                margin: 0;
+                //parte interior
+                tr{
+                    td{
+                        width: 95vw;
+                        text-align: left;
+                        vertical-align: middle;
+                        border: 1px solid rgb(199, 133, 11);
+                    }
+                }
+                //fila principal
+                #criterios{
+                    background-color: rgb(206, 140, 34);
+                    text-align: center;
+                    font-style: italic;
+                    color: rgb(56, 30, 30);
+                }
+            }
+            //columnas-interior
+            .columna1{
+                color: rgb(204, 52, 52) ;
+                text-align: center;
+                font-weight: bold;
+            }
+            .columna2{
+                color: rgb(153, 40, 40);
+            }
+            .columna3{
+                color: rgb(138, 34, 34);
+                font-weight: bold;
+                text-align: center;
+            }
+            .columna4{
+                color: rgb(109, 28, 28);
+            }
+            .columna5{
+                color: rgb(68, 17, 17);
+            }
+        }
+        #divs3{
+            margin: 0 1.5vw 0 0.5vw;
+        
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center ;
+        }
+    }
+    #seccionconsejos {
+        margin: 0;
+        border-right: dotted 5px #804000;
+        border-left: dotted 5px #804000;
+        padding: 0 10px 0 5px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #divs4{
+            margin: 0 0.5vw 0 2vw;
+        
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center ;
+        
+        }
+    }
+    #seccioncomenta {
+        margin: 0;
+        border: solid 5px #804000;
+        padding: 0 10px 0 5px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            img {
+                width:90%;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

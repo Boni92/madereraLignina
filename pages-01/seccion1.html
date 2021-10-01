@@ -20,7 +20,7 @@
 
     <!--bootstrap-->
     <link href="../bootstrap-5.1.1-dist/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap-4.3.1/scss/bootstrap.scss">
+    <link rel="stylesheet" href="../bootstrap-4.3.1/scss/bootstrap.scss">
 
     <!--css propio-->
     <link rel="stylesheet" href="../CSS/main.css">
@@ -29,16 +29,24 @@
 </head>
 <body id="cuerpom">
 
+    <!--Inicio scroll to top-->
+    <div id="contflecha">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://lh3.googleusercontent.com/pw/AM-JKLVJoaXJvkCUu1geckTfiOrehOiDWNP8FgPpnFcFLExlYz90lF57y641i40jp521y90kWQx-4Jh4EbpuomFqGavhb44JrjxxsB5OgGDpRQN4pnXvVvwcBPIGwDSJ1Amh7ChEtHBw2ImC0ymOmvbbXLHm=s48-no" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+
+    </div>
+    <!--Fin scroll to top-->
+    
     <!--inicio header-->
     <header>
         <div>
             <!--Barrafija-->
             <div id="barrafija">
                 <img src="../img/logomio.png" alt="logo" id="logo">
-                <a href="../pages-01/registro.html">Registrarse</a>
-                <a href="../pages-01/Ingreso.html">Ingresar</a>
+                <a href="../pages-01/registro.html" id="registro">Registrarse</a>
+                <a href="../pages-01/Ingreso.html" id="ingreso">Ingresar</a>
                 <a href="../pages-01/carro_de_compras.html">
-                    <img src="../img/carrito.png" alt="carrodecompras">
+                    <img src="../img/carrito.png" alt="carrodecompras" id="carrito">
                 </a>
             </div>
 
@@ -47,22 +55,22 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="../pages-01/seccion1.html">Nosotros</a>
+                            <a href="../pages-01/seccion1.html" class="hovergradual">Nosotros</a>
                         </li>   
                         <li>  
-                            <a href="../pages-01/seccion2.html">Categorías</a>
+                            <a href="../pages-01/seccion2.html" class="hovergradual">Categorías</a>
                         </li>  
                         <li>    
-                            <a href="../pages-01/seccion3.html">Venta de la semana</a>
+                            <a href="../pages-01/seccion3.html" class="hovergradual">Venta de la semana</a>
                         </li>   
                         <li>   
-                            <a href="../pages-01/seccion4.html">Consejos</a>  
+                            <a href="../pages-01/seccion4.html" class="hovergradual">Consejos</a>  
                         </li>   
                         <li> 
-                            <a href="../pages-01/seccion5.html">Comentarios</a>
+                            <a href="../pages-01/seccion5.html" class="hovergradual">Comentarios</a>
                         </li>
                         <li> 
-                            <a href="../index.html">Volver al inicio</a>
+                            <a href="../index.html" class="hovergradual">Volver al inicio</a>
                         </li> 
                     </ul>           
                 </nav>
@@ -75,59 +83,221 @@
     <!--Inicio main-->
     <main>
         <div>
+            <!--titulo-->
             <div>
                 <h2 class="ache2">Nosotros</h2>
             </div>
             
+            <!--parrafo introductorio-->
             <div>
                 <p>Somos una empresa encargada de la fabricación de gran diversidad de objetos y elementos de madera, a partir de la centralización y optimización de dicha materia prima, en todas nuestras fabricas distribuidas en el país. En Lignina buscamos atender las necesidades del cliente, esforzándonos por mantener la estética, la practicidad y el costo accesible de cada uno de nuestros productos.
                 Nacimos en la localidad de Trenque lauquen, bajo la idea de nuestros padres quienes recién en la actualidad pueden disfrutar de sus sueños.
                 Para comenzar con el proyecto fue necesario contactarnos con distintos proveedores, a lo largo de varios meses, proponiendo nuestro proyecto y recibiendo tanto halagos como quejas. Fue luego de un largo trayecto que logramos coincidir con muchos comerciantes, los cuales hoy en día se convirtieron en pilares fundamentales y amigos de la empresa.</p>
             </div>
 
-            <div id="imgs2">
-                <div id="i1"> 
-                    <img src="../img/seccion_2/1.JPG" alt="foto1" >
+            <!--galeria de imagenes-->>
+            <div class="container ">
+
+                <!--fila 1-->
+                <div class="row py-4">
+
+                    <!--col 1-->
+                    <div class="col-sm-4 "> 
+                        <div id="carouself1c1" class="carousel slide " data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouself1c1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouself1c1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouself1c1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/seccion_1/1.JPG" alt="foto1" class="tamaño" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/seccion_1/2.JPG" alt="foto2" class="tamaño" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/seccion_1/3.JPG" alt="foto3" class="tamaño" >
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouself1c1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouself1c1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--col 2-->
+                    <div class="col-sm-4">
+                        <div id="carouself1c2" class="carousel slide " data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouself1c2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouself1c2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouself1c2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/seccion_1/4.PNG" alt="foto4" class="tamaño" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/seccion_1/5.PNG" alt="foto5" class="tamaño" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/seccion_1/6.PNG" alt="foto6" class="tamaño" >
+                                </div>
+                            </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouself1c2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouself1c2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                        </div>
+                    </div>
+
+                    <!--col 3-->
+                    <div class="col-sm-4">
+                        <div id="carouself1c3" class="carousel slide " data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouself1c3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouself1c3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouself1c3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/seccion_1/7.JPG" alt="foto7" class="tamaño" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/seccion_1/8.JPG" alt="foto8" class="tamaño" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/seccion_1/9.JPG" alt="foto9" class="tamaño" >
+                                </div>
+                            </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouself1c3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouself1c3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="i2">
-                    <img src="../img/seccion_2/2.JPG" alt="foto1" >
+                <!--fila 2-->
+                <div class="row py-4 ">
+                    
+                    <!--col 1-->                    
+                    <div class="col-sm-4">
+                        <div id="carouself2c1" class="carousel slide " data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouself2c1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouself2c1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouself2c1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/seccion_1/10.JPG" alt="foto10" class="tamaño" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/seccion_1/11.JPG" alt="foto11" class="tamaño" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/seccion_1/12.JPG" alt="foto12" class="tamaño" >
+                                </div>
+                            </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouself2c1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouself2c1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                        </div>
+                    </div>
+
+                    <!--col 2-->
+                    <div class="col-sm-4">
+                        <div id="carouself2c2" class="carousel slide " data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouself2c2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouself2c2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouself2c2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/seccion_1/13.JPG" alt="foto13" class="tamaño" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/seccion_1/14.JPG" alt="foto14" class="tamaño" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/seccion_1/15.JPG" alt="foto15" class="tamaño" >
+                                </div>
+                            </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouself2c2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouself2c2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                        </div>
+                    </div>
+
+                    <!--col 3-->                    
+                    <div class="col-sm-4"> 
+                        <div id="carouself2c3" class="carousel slide " data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouself2c3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouself2c3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouself2c3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/seccion_1/16.JPG" alt="foto16" class="tamaño" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/seccion_1/17.JPG" alt="foto17" class="tamaño" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/seccion_1/18.JPG" alt="foto18" class="tamaño" >
+                                </div>
+                            </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouself2c3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouself2c3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="i3">
-                    <img src="../img/seccion_2/3.JPG" alt="foto1" >
-                </div>
+                <!--fila 3-->
+                <div class="row py-4 ">
 
-                <div id="i4">
-                    <img src="../img/seccion_2/4.JPG" alt="foto1" >
-                </div>
-
-                <div id="i5">
-                    <img src="../img/seccion_2/5.JPG" alt="foto1" >
-                </div>
-
-                <div id="i6">
-                    <img src="../img/seccion_2/6.JPG" alt="foto1" >
-                </div>
-
-                <div id="i7">
-                    <img src="../img/seccion_2/7.JPG" alt="foto1" >
-                </div>
-
-                <div id="i8">
-                    <img src="../img/seccion_2/8.JPG" alt="foto1" >
-                </div>
-
-                <div id="i9">
-                    <img src="../img/seccion_2/9.JPG" alt="foto1" >
-                </div>
-
-                <div id="i10">
-                    <img src="../img/seccion_2/10.JPG" alt="foto1" >
-                </div>
-                
-                <div id="i9">
-                    <img src="../img/seccion_2/11.JPG" alt="foto1" >
+                    <!--col 1-->                    
+                    <div class="col-sm-12">
+                        <div class="contimagen">
+                            <img src="../img/seccion_1/23.JPG" alt="fotofinal" class="tamaño2">
+                            <div class="sombra"></div>
+                        </div>
+                        
+                        
+                    </div>
                 </div>
             </div>
         </div>

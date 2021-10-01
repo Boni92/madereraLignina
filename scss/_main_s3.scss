@@ -59,6 +59,11 @@ $colores: ( /*Declaro mapa*/
 }
 
 #mains3{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     div{
         margin-bottom: $margin-basic;
         ~div{
@@ -168,7 +173,12 @@ $colores: ( /*Declaro mapa*/
             font-weight: none;
         }
     }
+    .imgs3{
+        width: 300px;
+        height: auto; 
+    }
 }
+
 
 
 

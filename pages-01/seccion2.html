@@ -33,6 +33,15 @@
 
 </head>
 <body id="cuerpom">
+
+        <!--Inicio scroll to top-->
+        <div id="contflecha">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://lh3.googleusercontent.com/pw/AM-JKLVJoaXJvkCUu1geckTfiOrehOiDWNP8FgPpnFcFLExlYz90lF57y641i40jp521y90kWQx-4Jh4EbpuomFqGavhb44JrjxxsB5OgGDpRQN4pnXvVvwcBPIGwDSJ1Amh7ChEtHBw2ImC0ymOmvbbXLHm=s48-no" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+    
+        </div>
+        <!--Fin scroll to top-->
+    
     <!--inicio header-->
     <header>
         <div>
@@ -50,22 +59,22 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="../pages-01/seccion1.html">Nosotros</a>
+                            <a href="../pages-01/seccion1.html" class="hovergradual">Nosotros</a>
                         </li>   
                         <li>  
-                            <a href="../pages-01/seccion2.html">Categorías</a>
+                            <a href="../pages-01/seccion2.html" class="hovergradual">Categorías</a>
                         </li>  
                         <li>    
-                            <a href="../pages-01/seccion3.html">Venta de la semana</a>
+                            <a href="../pages-01/seccion3.html" class="hovergradual">Venta de la semana</a>
                         </li>   
                         <li>   
-                            <a href="../pages-01/seccion4.html">Consejos</a>  
+                            <a href="../pages-01/seccion4.html" class="hovergradual">Consejos</a>  
                         </li>   
                         <li> 
-                            <a href="../pages-01/seccion5.html">Comentarios</a>
+                            <a href="../pages-01/seccion5.html" class="hovergradual">Comentarios</a>
                         </li>
                         <li> 
-                            <a href="../index.html">Volver al inicio</a>
+                            <a href="../index.html" class="hovergradual">Volver al inicio</a>
                         </li> 
                     </ul>           
                 </nav>
@@ -83,15 +92,15 @@
             <h2 id="cats2" class="ache2">Categorías</h2>
         </div>
         
+
+
         <div id="d1" class="letraitalic">
             <a href="../pages-01/parte_1.html">
                 <h3 class="ache3">Dormitorio</h3>
             </a>
         </div>
 
-
-
-            <!--MODALS-->
+            <!--MODAL-->
 
                 <!--Escritorio-->
             <div id="d11">
@@ -101,14 +110,13 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary  mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary  mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d11Modal">
                         Escritorio
                     </button>
                 </div>
                 
-                
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d11Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -139,6 +147,7 @@
                     </div>
                 </div>
             </div>
+
                 <!--Mesada-->
             <div id="d12">
                 <div id="contentrada">
@@ -147,14 +156,13 @@
                         <img src="../img/seccion_22/dormitorio-mesada.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d12Modal">
                         Mesada
                     </button>
                 </div>
                 
-                
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d12Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -165,11 +173,11 @@
                                 <div>
                                     <div>
                                         <!--imagen-->
-                                        <img src="../img/seccion_22/cartel.png" alt="escritorio" style="width: 50%">
+                                        <img src="../img/seccion_22/dormitorio-mesada.png" alt="mesada" style="width: 50%">
                                     </div>
                                     <div>
                                         <!--datos-->
-                                        <p>La mesada posee unas dimensiones de 60 cm de ancho, 1.20 metros de largo y una altura total de 70cm. Cuenta con cajones fabricados con la misma clase de madera, guías metálicas y herrajes de madera. Se encuentra protejido y pintado por completo con sustancias adecuadas para su mayor duración. No apto para exterior.</p>
+                                        <p>La mesada posee ....</p>
                                         <!--precio-->
                                         <p>Precio: <strong>$ 3500</strong></p>
                                     </div>
@@ -192,14 +200,14 @@
                         <img src="../img/seccion_22/dormitorio-estante.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal" style="transform: translateY(20px);">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d13Modal" style="transform: translateY(20px);">
                         Estante
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d13Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -210,13 +218,13 @@
                                 <div>
                                     <div>
                                         <!--imagen-->
-                                        <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
+                                        <img src="../img/seccion_22/dormitorio-estante.png" alt="estante" style="width: 50%">
                                     </div>
                                     <div>
                                         <!--datos-->
-                                        <p>El estante posee unas dimensiones de 60 cm de ancho, 1.20 metros de largo y una altura total de 70cm. Cuenta con cajones fabricados con la misma clase de madera, guías metálicas y herrajes de madera. Se encuentra protejido y pintado por completo con sustancias adecuadas para su mayor duración. No apto para exterior.</p>
+                                        <p>El estante posee ...</p>
                                         <!--precio-->
-                                        <p>Precio: <strong>$ 4000</strong></p>
+                                        <p>Precio: <strong>$ 3620</strong></p>
                                     </div>
                                 </div>
                             </div>
@@ -237,14 +245,14 @@
                         <img src="../img/seccion_22/dormitorio-armario.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d14Modal">
                         Armario
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d14Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -255,11 +263,11 @@
                                 <div>
                                     <div>
                                         <!--imagen-->
-                                        <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
+                                        <img src="../img/seccion_22/dormitorio-armario.png" alt="armario" style="width: 50%">
                                     </div>
                                     <div>
                                         <!--datos-->
-                                        <p>El armario posee unas dimensiones de 60 cm de ancho, 1.20 metros de largo y una altura total de 70cm. Cuenta con cajones fabricados con la misma clase de madera, guías metálicas y herrajes de madera. Se encuentra protejido y pintado por completo con sustancias adecuadas para su mayor duración. No apto para exterior.</p>
+                                        <p>El armario posee ...</p>
                                         <!--precio-->
                                         <p>Precio: <strong>$ 7500</strong></p>
                                     </div>
@@ -275,6 +283,8 @@
                 </div>
             </div>
 
+
+
         <div  id="d2" class="letraitalic">
             
             <a href="../pages-01/parte_2.html">
@@ -282,7 +292,7 @@
             </a>
         </div>
 
-        <!--MODALS-->
+        <!--MODAL-->
 
             <!--Lavabo-->
             <div id="d21">
@@ -292,14 +302,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d21Modal">
                         Lavabo
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d21Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -337,14 +347,14 @@
                         <img src="../img/seccion_22/bano-mesada.png" alt="escritorio" style="width: 32%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d22Modal">
                         Mesada
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d22Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -382,14 +392,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d23Modal">
                         Estante
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d23Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -427,14 +437,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d24Modal">
                         Armario
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d24Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -481,14 +491,14 @@
                         <img src="../img/seccion_22/living-mesada.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d31Modal">
                         Mesada
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d31Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -526,14 +536,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d32Modal">
                         Estante
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d32Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -571,14 +581,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d33Modal">
                         Armario
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d33Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -616,14 +626,14 @@
                         <img src="../img/seccion_22/living-mesaratona.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d34Modal">
                         Mesa ratona
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d34Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -670,14 +680,14 @@
                         <img src="../img/seccion_22/exterior-silla.png" alt="escritorio" style="width: 40%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d41Modal">
                         Silla
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d41Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -715,14 +725,14 @@
                         <img src="../img/seccion_22/exterior-banco.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal" style="transform: translateY(20px);">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d42Modal" style="transform: translateY(20px);">
                         Deck
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d42Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -760,14 +770,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d43Modal">
                         Mesada
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d43Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -805,14 +815,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d44Modal">
                         Estante
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d44Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -859,14 +869,14 @@
                         <img src="../img/seccion_22/deco-banco.png" alt="escritorio" style="width: 35%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d51Modal">
                         Banco
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d51Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -904,14 +914,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d52Modal">
                         Escritorio
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d52Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -949,14 +959,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d53Modal">
                         Mesada
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d53Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -994,14 +1004,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d54Modal">
                         Lampara
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d54Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -1048,14 +1058,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d61Modal">
                         Estético
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d61Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -1093,14 +1103,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d62Modal">
                         Tablas
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d62Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -1138,14 +1148,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d63Modal">
                         Listones
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d63Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -1183,14 +1193,14 @@
                         <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d64Modal">
                         Vigas
                     </button>
                 </div>
                 
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="d64Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -1237,14 +1247,14 @@
                     <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                 </div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d71Modal">
                     Columnas
                 </button>
             </div>
             
             
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="d71Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1282,14 +1292,14 @@
                     <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                 </div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d72Modal">
                     Natural
                 </button>
             </div>
             
             
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="d72Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1327,14 +1337,14 @@
                     <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                 </div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d73Modal">
                     Cepillado
                 </button>
             </div>
             
             
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="d73Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1372,14 +1382,14 @@
                     <img src="../img/seccion_22/dormitorio-escritorio.png" alt="escritorio" style="width: 50%">
                 </div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary mb-1 botoncolor" data-bs-toggle="modal" data-bs-target="#d74Modal">
                     Lijado
                 </button>
             </div>
             
             
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="d74Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">

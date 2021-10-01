@@ -27,7 +27,12 @@
         justify-self: left;
         #cats2{
             grid-area: cats2;
+            background-image: url(../img/seccion_22/cartel.png);
+            background-repeat: no-repeat;
+            background-position: bottom ;
+            background-size: cover;
             
+            padding: 20px 0 30px 0;
         }
     }
 
