@@ -1,4 +1,6 @@
 footer {
+    border-top: solid 1px rgb(73, 68, 68);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,15 +15,11 @@ footer {
     }
     .logos {
         width: 250px;
-        height: 250px;
+        height: 210px;
         h2 {
             font-size: 1.2rem;
             text-align: center;
         }
-    
-        /* display: flex;
-        flex-direction: column;
-        align-items: center; */
     }
     
         //=== Home/footer 1 - proveedores===
@@ -31,7 +29,11 @@ footer {
             flex-flow: column wrap;
             justify-content: center;
             align-items: center;
-
+            margin-bottom: 1em;
+            h2{
+                margin-top: 1.5em;
+                margin-bottom: 1em;
+            }
             div{
                 display: flex;
                 flex-direction: row;
@@ -77,6 +79,11 @@ footer {
                         display: inline-block;
                         li {
                             margin-left: -30px;
+                            
+                            a{
+                                text-decoration: none;
+                                color: black;
+                            }
                         }
                     }
                 }
@@ -87,10 +94,16 @@ footer {
     #finfo{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 
     width: 500px;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     #divlista_red{
         margin-left: -50px;
         #divredes {
@@ -106,13 +119,13 @@ footer {
                 justify-content: center;
                 align-items: center;
             
-                margin: 10px;
+                margin: 0px 10px 0px 10px;
             }
         }
     }
     div{
         img{
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
     }
     #copymobile{

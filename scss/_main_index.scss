@@ -2,8 +2,8 @@ main{
     
     p{
         font-style: normal;
-        font-weight: lighter;
-        font-size: medium;
+        font-weight: 500;
+        font-size: large;
         text-align: left;
         text-transform: none;
         line-height: 25px;
@@ -14,8 +14,8 @@ main{
     }
     span{
         font-style: normal;
-        font-weight: lighter;
-        font-size: medium;
+        font-weight: 500;
+        font-size: large;
         line-height: 25px;
         letter-spacing: 0px;
         word-spacing: 1px;
@@ -67,6 +67,7 @@ main{
         margin-top: 10px;
         border: solid 5px #804000;
         padding: 0 10px 0 5px;
+        
 
         display: flex;
         flex-direction: column;
