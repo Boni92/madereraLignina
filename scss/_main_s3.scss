@@ -95,6 +95,9 @@ $colores: ( /*Declaro mapa*/
             table{
                 border: solid 1px $color-border;
                 tr{
+                    .columna1{
+                        text-align: center;
+                    }
                     td{
                         border: solid 1px $color-border;
                         color: $color-table !important;
@@ -113,6 +116,7 @@ $colores: ( /*Declaro mapa*/
                         }
                     }
                     th{
+                        text-align: center;
                         color: $color-table;
                     }
                     

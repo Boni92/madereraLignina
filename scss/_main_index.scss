@@ -1,3 +1,5 @@
+$colortabla: rgb(102, 22, 22);
+
 main{
     
     p{
@@ -180,23 +182,24 @@ main{
             }
             //columnas-interior
             .columna1{
-                color: rgb(204, 52, 52) ;
+                color: $colortabla ;
                 text-align: center;
                 font-weight: bold;
+                font-size: larger;
             }
             .columna2{
-                color: rgb(153, 40, 40);
+                color: $colortabla ;
             }
             .columna3{
-                color: rgb(138, 34, 34);
+                color: $colortabla ; 
                 font-weight: bold;
                 text-align: center;
             }
             .columna4{
-                color: rgb(109, 28, 28);
+                color: $colortabla ;
             }
             .columna5{
-                color: rgb(68, 17, 17);
+                color: $colortabla ;
             }
         }
         #divs3{

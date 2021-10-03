@@ -294,19 +294,20 @@ main #seccionventa {
       font-style: italic;
       color: #381e1e; }
   main #seccionventa div .columna1 {
-    color: #cc3434;
+    color: #661616;
     text-align: center;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: larger; }
   main #seccionventa div .columna2 {
-    color: #992828; }
+    color: #661616; }
   main #seccionventa div .columna3 {
-    color: #8a2222;
+    color: #661616;
     font-weight: bold;
     text-align: center; }
   main #seccionventa div .columna4 {
-    color: #6d1c1c; }
+    color: #661616; }
   main #seccionventa div .columna5 {
-    color: #441111; }
+    color: #661616; }
   main #seccionventa #divs3 {
     margin: 0 1.5vw 0 0.5vw;
     display: flex;
@@ -730,6 +731,8 @@ h3 {
       margin-bottom: 5px; }
     #mains3 div div table {
       border: solid 1px #c7850b; }
+      #mains3 div div table tr .columna1 {
+        text-align: center; }
       #mains3 div div table tr td {
         border: solid 1px #c7850b;
         color: #201e1e !important;
@@ -744,6 +747,7 @@ h3 {
           #mains3 div div table tr td ol li {
             color: #201e1e; }
       #mains3 div div table tr th {
+        text-align: center;
         color: #201e1e; }
     #mains3 div #linkcomprar a {
       text-decoration: none; }
