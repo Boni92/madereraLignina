@@ -5,7 +5,8 @@
   margin-top: 10px;
   border: 5px;
   padding: 10px;
-  background-image: url("https://i.pinimg.com/originals/26/8c/71/268c713453d7a6058c1e3e5f8f004176.png"); }
+  background-image: url("../img/tinified/MADERA4.png");
+  background-repeat: repeat; }
   #cuerpom #contflecha {
     position: sticky;
     top: 50px; }
@@ -140,14 +141,14 @@
       width: 100%;
       height: auto; }
 
-/*inicio animacion*/
+/*inicio animaciones*/
 @keyframes movimiento {
   0% {
     font-size: 50px; }
   50% {
     font-size: 100px; } }
 
-/*fin animacion*/
+/*fin animaciones*/
 main p {
   font-style: normal;
   font-weight: 500;
@@ -169,8 +170,17 @@ main span {
   word-spacing: 1px;
   color: black; }
 
+main .titulo {
+  margin: 10px 0 10px 0; }
+
 main .ache2 {
-  color: #554415; }
+  color: #554415;
+  font-size: 1.8em;
+  font-weight: 800; }
+
+main .goma:hover {
+  display: inline-block;
+  animation: goma 1s; }
 
 main .ache3 {
   color: #62462c; }
@@ -203,6 +213,9 @@ main .spanespecial {
 main .parrafo1 {
   text-align: center; }
 
+main .sobresalir:hover {
+  transform: scale(1.1); }
+
 main section div a {
   text-decoration: none; }
 
@@ -214,19 +227,24 @@ main #seccionnosotros {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  main #seccionnosotros div span {
+    margin-left: 1px;
+    margin-right: 1px; }
   main #seccionnosotros div .imagen {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     height: auto;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 10px 8px #1f1e1e; }
   main #seccionnosotros div .video {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px 8px #1f1e1e; }
 
 main #seccioncatego {
   margin-bottom: 20px;
@@ -239,11 +257,14 @@ main #seccioncatego {
   justify-content: space-evenly;
   align-items: center; }
   main #seccioncatego div div {
-    padding: 10px;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center; }
+    main #seccioncatego div div div span {
+      margin-left: 1px;
+      margin-right: 1px; }
 
 main .contenedors2 {
   position: relative;
@@ -271,43 +292,47 @@ main #seccionventa {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  main #seccionventa div h2 {
+  main #seccionventa div {
+    margin: 10px 4px 5px 4px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; }
-  main #seccionventa div table {
-    width: 85vmax;
-    border: 1px solid #c7850b;
-    border-spacing: 0;
-    border-collapse: collapse;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    margin: 0; }
-    main #seccionventa div table tr td {
-      width: 95vw;
-      text-align: left;
-      vertical-align: middle;
-      border: 1px solid #c7850b; }
-    main #seccionventa div table #criterios {
-      background-color: #ce8c22;
+    main #seccionventa div div span {
+      margin-left: 1px;
+      margin-right: 1px; }
+    main #seccionventa div table {
+      width: 85vmax;
+      border: 1px solid #c7850b;
+      border-spacing: 0;
+      border-collapse: collapse;
+      font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+      margin: 0; }
+      main #seccionventa div table tr td {
+        width: 95vw;
+        text-align: left;
+        vertical-align: middle;
+        border: 1px solid #c7850b; }
+      main #seccionventa div table #criterios {
+        background-color: #ce8c22;
+        text-align: center;
+        font-style: italic;
+        color: #381e1e; }
+    main #seccionventa div .columna1 {
+      color: #661616;
       text-align: center;
-      font-style: italic;
-      color: #381e1e; }
-  main #seccionventa div .columna1 {
-    color: #661616;
-    text-align: center;
-    font-weight: bold;
-    font-size: larger; }
-  main #seccionventa div .columna2 {
-    color: #661616; }
-  main #seccionventa div .columna3 {
-    color: #661616;
-    font-weight: bold;
-    text-align: center; }
-  main #seccionventa div .columna4 {
-    color: #661616; }
-  main #seccionventa div .columna5 {
-    color: #661616; }
+      font-weight: bold;
+      font-size: larger; }
+    main #seccionventa div .columna2 {
+      color: #661616; }
+    main #seccionventa div .columna3 {
+      color: #661616;
+      font-weight: bold;
+      text-align: center; }
+    main #seccionventa div .columna4 {
+      color: #661616; }
+    main #seccionventa div .columna5 {
+      color: #661616; }
   main #seccionventa #divs3 {
     margin: 0 1.5vw 0 0.5vw;
     display: flex;
@@ -343,9 +368,26 @@ main #seccioncomenta {
     display: flex;
     flex-direction: row;
     justify-content: center; }
+    main #seccioncomenta div div span {
+      margin-left: 1px;
+      margin-right: 1px; }
     main #seccioncomenta div img {
       width: 90%;
-      margin-bottom: 5px; }
+      margin: 10px 0 5px 0; }
+
+@keyframes goma {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  35% {
+    transform: scale3d(1.25, 0.75, 1); }
+  45% {
+    transform: scale3d(0.75, 1, 1); }
+  60% {
+    transform: scale3d(1.2, 0.8, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
 
 main div div div div .contimagen {
   position: relative;
@@ -478,7 +520,7 @@ span {
         margin-bottom: 10px; }
   #mains2 div a {
     text-decoration: none; }
-  #mains2 div #contenedortitulo {
+  #mains2 div .contenedortitulo {
     width: 200px;
     height: 130px;
     background: url(../img/seccion_2/cartel3.png);
@@ -488,7 +530,7 @@ span {
     display: flex;
     flex-direction: row;
     align-items: center; }
-    #mains2 div #contenedortitulo h3 {
+    #mains2 div .contenedortitulo h3 {
       margin-left: 12px;
       margin-top: 5px;
       text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5), 0px -1px 1px rgba(0, 0, 0, 0.3); }

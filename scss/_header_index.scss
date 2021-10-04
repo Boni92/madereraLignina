@@ -4,8 +4,10 @@
     margin-top: 10px;
     border: 5px;
     padding: 10px;
-    background-image: url("https://i.pinimg.com/originals/26/8c/71/268c713453d7a6058c1e3e5f8f004176.png");
-
+    background-image: url("../img/tinified/MADERA4.png");
+    background-repeat: repeat;
+    
+    
     #contflecha{
         position: sticky;
         top: 50px;
@@ -185,14 +187,18 @@
                     height: auto;
                 }
             }
+            
+            
+            
         }
+        
     }
     
-
+    
 // fin body
 }
 
-/*inicio animacion*/
+/*inicio animaciones*/
 @keyframes movimiento{
     0% {
         font-size: 50px;
@@ -202,4 +208,5 @@
     }
     
 }
-/*fin animacion*/
+
+/*fin animaciones*/

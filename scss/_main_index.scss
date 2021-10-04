@@ -23,9 +23,19 @@ main{
         word-spacing: 1px;
         color: rgb(0, 0, 0);
     }
-    .ache2{
-        color: #554415 ;    
+    .titulo{
+        margin: 10px 0 10px 0;
     }
+    .ache2{
+        color: #554415 ;
+        font-size: 1.8em;
+        font-weight: 800;
+    }
+    .goma:hover{
+        display:inline-block;
+        animation: goma 1s;
+    }
+    
     .ache3{
         color: #62462c;
     }
@@ -58,12 +68,16 @@ main{
     .parrafo1{
         text-align: center;
     }
+    .sobresalir:hover{
+        transform: scale(1.1);
+    }
     section{
         div{
             a{
                 text-decoration: none;
             }
         }
+
     }
     #seccionnosotros{
         margin-top: 10px;
@@ -78,6 +92,10 @@ main{
 
 
         div{
+            span{
+                margin-left: 1px;
+                margin-right: 1px;
+            }
             .imagen{
                 display: block;
                 margin-left: auto;
@@ -85,13 +103,18 @@ main{
                 width: 100%;
                 height: auto;
                 margin-bottom: 5px;
+                box-shadow: 0px 0px 10px 8px #1f1e1e;
+                
             }
+            
             .video{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
                 width: 60%;
                 margin-bottom: 10px;
+                box-shadow: 0px 0px 10px 8px #1f1e1e;
+
             }
         }
     }
@@ -109,12 +132,18 @@ main{
         
         div{
             div{
-                padding: 10px;
-            
+                margin:10px;
+
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
                 align-items: center;
+                div{
+                    span{
+                        margin-left: 1px;
+                        margin-right: 1px;
+                    }
+                }
             } 
         }
         
@@ -150,11 +179,17 @@ main{
         justify-content: center;
         align-items: center;
         div{
-            h2{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
+            margin: 10px 4px 5px 4px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            div{
+                span{
+                    margin-left: 1px;
+                    margin-right: 1px;
+                }
+            
             }
             table{
                 width: 85vmax;
@@ -246,11 +281,48 @@ main{
             display: flex;
             flex-direction: row;
             justify-content: center;
+            div{
+                span{
+                    margin-left: 1px;
+                    margin-right: 1px;
+                }
+
+            }
 
             img {
                 width:90%;
-                margin-bottom: 5px;
+                margin: 10px 0 5px 0;
             }
         }
     }
+    
 }
+
+//Inicio animaciones
+@keyframes goma{
+    0%{
+        transform: scale3d(1,1,1);
+        
+    }
+    35%{
+        transform: scale3d(1.25,.75,1);
+
+    }
+    45%{
+        transform: scale3d(.75,1,1);
+
+    }
+    60%{
+        transform: scale3d(1.2,.8,1);
+
+    }
+    75%{
+        transform: scale3d(1.05,.95,1);
+
+    }
+    100%{
+        transform: scale3d(1,1,1);
+
+    }
+}
+//Inicio animaciones
