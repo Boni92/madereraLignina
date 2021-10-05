@@ -1,276 +1,473 @@
 
 //========  media query- MOBILE  =========/
 @media only screen and (max-width: 480px) {
-    
-    header{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: 1fr, 2fr, 3fr;
-        grid-template-areas: 
-            "barrafija"
-            "navbarra"
-            "lignina";
-        justify-items: center;
-        align-items: center;
-        font-size: 60%;
-    }
-    
-    #barrafija{
-        grid-area: barrafija;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-    }
-    #navbarra{
-        grid-area: navbarra;
-    }
-    #lignina{
-        grid-area: lignina;
-        align-items: center;
-        margin: 0px;
-        padding: 0px;
+    #cuerpoindex{
         
-    }
-    .lignina{
-        background: none;
-        box-shadow: none;
-
-    }
-    .lignina h1{
-        animation: none;
+        header{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 1fr, 2fr, 3fr;
+            grid-template-areas: 
+                "barrafija"
+                "navbarra"
+                "lignina";
+            justify-items: center;
+            align-items: center;
+            font-size: 60%;
+            #barrafija{
+                grid-area: barrafija;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                a{
+                    transition: none;
+                    #carrito{
+                        width: 50%;
+                        height: auto;
+                        transform: translateX(19.5px);
+                    }
+                }
+                img{
+                    transition: none;
+                }
+                #logo{
+                    display: block;
+                    width: 10%;
+                    height: auto;
+                }
         
-        font-size: 400%;
-        letter-spacing: 10px;
-        width: 100%;
-    }
-    #barrafija a{
-        transition: none;
+            }
+            #navbarra{
+                grid-area: navbarra;
+                nav{
+                    ul{
+                        display: grid;
+                        grid-template-columns: repeat(1,1fr);
+                        grid-template-rows: repeat(5,1fr);
+                        grid-template-areas: 
+                            "nos"
+                            "cat"
+                            "ven"
+                            "con"
+                            "come";
+                        justify-items: center;
+                        align-items: center;
+                
+                        margin-top: 10px;
+                        transform: translateX(-20px);
+                        li{
+                            div{
+                                button{
+                                    height: 37px;
+                                    width: auto;
+                                }
+                            }
+                        }
+                        #nos{
+                            grid-area: nos;
+                        }
+                        #cat{
+                            grid-area: cat;
+                        }
+                        #ven{
+                            grid-area: ven;
+                        }
+                        #con{
+                            grid-area: con;
+                        }
+                        #come{
+                            grid-area: come;
+                        }
+                    }
+                }
 
-    }
-    #barrafija img{
-        transition: none;
-    }
-    #logo{
-        display: block;
-        width: 10%;
-        height: auto;
-    }
-    #carrito{
-        width: 50%;
-        height: auto;
-        transform: translateX(19.5px);
-    }
-    #navbarra nav ul{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(5,1fr);
-        grid-template-areas: 
-            "nos"
-            "cat"
-            "ven"
-            "con"
-            "come";
-        justify-items: center;
-        align-items: center;
-
-        margin-top: 10px;
-        transform: translateX(-20px);
-    }
-    #nos{
-        grid-area: nos;
-    }
-    #cat{
-        grid-area: cat;
-    }
-    #ven{
-        grid-area: ven;
-    }
-    #con{
-        grid-area: con;
-    }
-    #come{
-        grid-area: come;
-    }
-    main section{
-        font-size: 75%;
-    }
-    .imagen{
-        width: 90%;
-        height: auto;
-        margin-bottom: 5px;
-    }
-
-    /*=== home seccion 2 - Categorias ===*/
-    #seccioncatego{
-        margin-bottom: 0px;
-    }
-    #seccioncatego div div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-    #seccioncatego div div div a div img{
-        display: none
-    }
-    /*=== home/seccion 3 - Venta de la semana ===*/    
-    #seccionventa{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .ache2{
-        text-align: center;
-    }
-    .alineacion{
-            text-align: center;
-            text-decoration: none;
-            text-transform: none;
+            }
+            #lignina{
+                grid-area: lignina;
+                align-items: center;
+                margin: 0px;
+                padding: 0px;
+                
+            }
+            .lignina{
+                background: none;
+                box-shadow: none;
+                h1{
+                    animation: none;
+                    
+                    font-size: 400%;
+                    letter-spacing: 10px;
+                    width: 100%;
+                }
+            }
         }
-    #divs3{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-    #divs3 div span{
-        font-size: 75%;
-        line-height: 25px;
-    }
-    #seccionventa div div{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-    }
-    #seccionventa div div img{
-        width: 10em;
-        height: auto;
-        margin-bottom: 2px;
-    }
-    #seccionventa div table{
-        display: none;
-    }
-    /*=== home/seccion 4 - consejos ===*/
-    #seccionconsejos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-    #divs4{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-    #divs4 div span{
-        font-size: 75%;
-        line-height: 25px;
-    }
-    #seccionconsejos div div{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-    }
-    #seccionconsejos div div img{
-        width: 10em;
-        height: auto;
-        margin-bottom: 2px;
-    }
-    #seccionconsejos div audio{
-        display: none;
-    }
+        main{
+            section{
+                font-size: 75%;
+                
+                div{
+                    
+                    .imagen{
+                        width: 90%;
+                        height: auto;
+                        margin-bottom: 5px;
+                    }
+                    
+                }
+            }
+            //=== home seccion 2 - Categorias ===
+            #seccioncatego{
+                margin-bottom: 0px;
+                div{
+                    div{
+                        .titulo{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                        }
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-content: center;
+                        div{
+                            a{
+                                div{
+                                    img{
+                                        display: none
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //=== home/seccion 3 - Venta de la semana ===    
+            #seccionventa{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
-    /*=== Home/footer ===*/
-    footer{
-        border: solid 2px indigo;
-        display: flex;
-        flex-direction: column;
+                
+                div{
+                    div{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-content: center;
+                        img{
+                            width: 10em;
+                            height: auto;
+                            margin-bottom: 2px;
+                        }
+                    }
+                    table{
+                        display: none;
+                    }
+                }
+                #divs3{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    div{
+                        span{
+                            line-height: 25px;
+                            font-weight: 500;
+                            word-spacing: 5px;
+                        }
+                    }
+                }
+                #tituloppal{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items:center;
+                    div{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items:center;
+                    }
+                }
+            }
+            .ache2{
+                text-align: center;
+            }
+            .alineacion{
+                text-align: center;
+                text-decoration: none;
+                text-transform: none;
+                }
+            //=== home/seccion 4 - consejos ===
+            #seccionconsejos{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                #divs4{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    div{
+                        span{
+                            line-height: 25px;
+                            word-spacing: 5px;
+                        }
+                    }
+                }
+                div{
+                    audio{
+                        display: none;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-content: center;
+                        img{
+                            width: 100%;
+                            height: auto;
+                            margin-bottom: 2px;
+                        }
+                    }
+                }
+            }
+            //=== home/seccion 5 - comentarios ===
+            #seccioncomenta{
+                div{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            #fproveedores{
+                div{
+                width: 80%;
+        
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 50%;
+                } 
+                }
+            } 
+            #fcontacto {
+                div{
+                    font-size: 90%;
+                    width: auto;
+                    height: auto;
+                    margin-top: 10px;
+            
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center ;
+                    align-content: center;
+                    div{
+                        
+                        div{
+                            ul{
+                                text-align: center;
+                                margin: 0px 3px 0px 3px;
+                            }
+                        }
+                    }
+                    #divmapa{
+                        transform: translateX(0px);
+                        iframe{
+                            width: 70%;
+                        }
+                    }
+                    #divate{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center ;
+                        align-content: center;
+                        div{
+                            #divatencion{
+                                text-align: center;
+                            }
+                        }
+                    }
+                    #divnewsletter{
+                        transform: translateX(0px);
+                    }
+                }
+            }
+            #finfo{
+                width: 100%;
+                height: auto;
+                div{
+                    #divredes{
+                        display: flex;
+                        flex-direction: row;
+
+                        transform: translate(-10px,10px);
+                    }
+                }
+                #copydesk{
+                    display: none;
+                }
+                #copymobile{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+            
+                    margin-top: 10px;
+                }
+            }
+            .ache4{
+                margin: 2px 0 2px 0;
+            }
+        }
     }
-    #fproveedores div {
-        width: 80%;
+    #cuerpos1{
+        header{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 1fr, 2fr, 3fr;
+            grid-template-areas: 
+                "barrafija"
+                "navbarra"
+                "lignina";
+            justify-items: center;
+            align-items: center;
+            font-size: 60%;
+            #barrafija{
+                grid-area: barrafija;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                a{
+                    transition: none;
+                    #carrito{
+                        width: 50%;
+                        height: auto;
+                        transform: translateX(19.5px);
+                    }
+                }
+                img{
+                    transition: none;
+                }
+                #logo{
+                    display: block;
+                    width: 10%;
+                    height: auto;
+                }
+        
+            }
+            #navbarra{
+                grid-area: navbarra;
+                nav{
+                    ul{
+                        display: grid;
+                        grid-template-columns: repeat(1,1fr);
+                        grid-template-rows: repeat(5,1fr);
+                        grid-template-areas: 
+                            "nos"
+                            "cat"
+                            "ven"
+                            "con"
+                            "come";
+                        justify-items: center;
+                        align-items: center;
+                
+                        margin-top: 10px;
+                        transform: translateX(-20px);
+                        li{
+                            div{
+                                button{
+                                    height: 37px;
+                                    width: auto;
+                                }
+                            }
+                        }
+                        #nos{
+                            grid-area: nos;
+                        }
+                        #cat{
+                            grid-area: cat;
+                        }
+                        #ven{
+                            grid-area: ven;
+                        }
+                        #con{
+                            grid-area: con;
+                        }
+                        #come{
+                            grid-area: come;
+                        }
+                    }
+                }
 
-        display: flex;
-        flex-direction: column;
-    } 
-    #fproveedores div img{
-        width: 50%;
-    } 
-    #fcontacto div{
-        font-size: 90%;
-        width: auto;
-        height: auto;
-        margin-top: 10px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center ;
-        align-content: center;
-
+            }
+            #lignina{
+                grid-area: lignina;
+                align-items: center;
+                margin: 0px;
+                padding: 0px;
+                
+            }
+            .lignina{
+                background: none;
+                box-shadow: none;
+                h1{
+                    animation: none;
+                    
+                    font-size: 400%;
+                    letter-spacing: 10px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #cuerpos2{
+        /*seccion 2 - categorías*/
+    
+        #mains2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            border: none;
+        }
+        #mains2 h2{
+            margin-top: 5px;
+        }
+        #mains2 div{
+            margin: 10px;
+        }
+    }
+    #cuerpos3{
         
     }
-    #fcontacto div div div ul{
-        text-align: center;
-        margin: 0px 3px 0px 3px;
+    #cuerpos4{
+        
     }
-    #divmapa{
-        transform: translateX(0px);
+    #cuerpos5{
+        
     }
-    iframe{
-        width: 70%;
+    #cuerpoingreso{
+        
     }
-    #divate{
-        display: flex;
-        flex-direction: column;
-        justify-content: center ;
-        align-content: center;
+    #cuerporegistro{
+        
     }
-    #divatencion{
-        text-align: center;
-    }
-    #divnewsletter{
-        transform: translateX(0px);
-    }
-    #divredes{
-        display: flex;
-        flex-direction: row;
-    }
-    #copydesk{
-        display: none;
-    }
-    #copymobile{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        margin-top: 10px;
-    }
-    .ache4{
-        margin: 2px 0 2px 0;
-    }
-    /*seccion 2 - categorías*/
-
-    #mains2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        border: none;
-    }
-    #mains2 h2{
-        margin-top: 5px;
-    }
-    #mains2 div{
-        margin: 10px;
+    #cuerpocarrito{
+        
     }
 }
+    
 
 //========  media query- DESK  =========
 /*

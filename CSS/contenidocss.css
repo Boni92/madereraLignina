@@ -976,7 +976,7 @@ footer {
       display: none; }
 
 @media only screen and (max-width: 480px) {
-  header {
+  #cuerpoindex header {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr, 2fr, 3fr;
@@ -984,190 +984,274 @@ footer {
     justify-items: center;
     align-items: center;
     font-size: 60%; }
-  #barrafija {
-    grid-area: barrafija;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-  #navbarra {
-    grid-area: navbarra; }
-  #lignina {
-    grid-area: lignina;
-    align-items: center;
-    margin: 0px;
-    padding: 0px; }
-  .lignina {
-    background: none;
-    box-shadow: none; }
-  .lignina h1 {
-    animation: none;
-    font-size: 400%;
-    letter-spacing: 10px;
-    width: 100%; }
-  #barrafija a {
-    transition: none; }
-  #barrafija img {
-    transition: none; }
-  #logo {
-    display: block;
-    width: 10%;
-    height: auto; }
-  #carrito {
-    width: 50%;
-    height: auto;
-    transform: translateX(19.5px); }
-  #navbarra nav ul {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "nos" "cat" "ven" "con" "come";
-    justify-items: center;
-    align-items: center;
-    margin-top: 10px;
-    transform: translateX(-20px); }
-  #nos {
-    grid-area: nos; }
-  #cat {
-    grid-area: cat; }
-  #ven {
-    grid-area: ven; }
-  #con {
-    grid-area: con; }
-  #come {
-    grid-area: come; }
-  main section {
+    #cuerpoindex header #barrafija {
+      grid-area: barrafija;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #cuerpoindex header #barrafija a {
+        transition: none; }
+        #cuerpoindex header #barrafija a #carrito {
+          width: 50%;
+          height: auto;
+          transform: translateX(19.5px); }
+      #cuerpoindex header #barrafija img {
+        transition: none; }
+      #cuerpoindex header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    #cuerpoindex header #navbarra {
+      grid-area: navbarra; }
+      #cuerpoindex header #navbarra nav ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "nos" "cat" "ven" "con" "come";
+        justify-items: center;
+        align-items: center;
+        margin-top: 10px;
+        transform: translateX(-20px); }
+        #cuerpoindex header #navbarra nav ul li div button {
+          height: 37px;
+          width: auto; }
+        #cuerpoindex header #navbarra nav ul #nos {
+          grid-area: nos; }
+        #cuerpoindex header #navbarra nav ul #cat {
+          grid-area: cat; }
+        #cuerpoindex header #navbarra nav ul #ven {
+          grid-area: ven; }
+        #cuerpoindex header #navbarra nav ul #con {
+          grid-area: con; }
+        #cuerpoindex header #navbarra nav ul #come {
+          grid-area: come; }
+    #cuerpoindex header #lignina {
+      grid-area: lignina;
+      align-items: center;
+      margin: 0px;
+      padding: 0px; }
+    #cuerpoindex header .lignina {
+      background: none;
+      box-shadow: none; }
+      #cuerpoindex header .lignina h1 {
+        animation: none;
+        font-size: 400%;
+        letter-spacing: 10px;
+        width: 100%; }
+  #cuerpoindex main section {
     font-size: 75%; }
-  .imagen {
-    width: 90%;
-    height: auto;
-    margin-bottom: 5px; }
-  /*=== home seccion 2 - Categorias ===*/
-  #seccioncatego {
+    #cuerpoindex main section div .imagen {
+      width: 90%;
+      height: auto;
+      margin-bottom: 5px; }
+  #cuerpoindex main #seccioncatego {
     margin-bottom: 0px; }
-  #seccioncatego div div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
-  #seccioncatego div div div a div img {
-    display: none; }
-  /*=== home/seccion 3 - Venta de la semana ===*/
-  #seccionventa {
+    #cuerpoindex main #seccioncatego div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #cuerpoindex main #seccioncatego div div .titulo {
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        align-items: center; }
+      #cuerpoindex main #seccioncatego div div div a div img {
+        display: none; }
+  #cuerpoindex main #seccionventa {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .ache2 {
+    #cuerpoindex main #seccionventa div div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center; }
+      #cuerpoindex main #seccionventa div div img {
+        width: 10em;
+        height: auto;
+        margin-bottom: 2px; }
+    #cuerpoindex main #seccionventa div table {
+      display: none; }
+    #cuerpoindex main #seccionventa #divs3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #cuerpoindex main #seccionventa #divs3 div span {
+        line-height: 25px;
+        font-weight: 500;
+        word-spacing: 5px; }
+    #cuerpoindex main #seccionventa #tituloppal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #cuerpoindex main #seccionventa #tituloppal div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+  #cuerpoindex main .ache2 {
     text-align: center; }
-  .alineacion {
+  #cuerpoindex main .alineacion {
     text-align: center;
     text-decoration: none;
     text-transform: none; }
-  #divs3 {
+  #cuerpoindex main #seccionconsejos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center; }
-  #divs3 div span {
-    font-size: 75%;
-    line-height: 25px; }
-  #seccionventa div div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center; }
-  #seccionventa div div img {
-    width: 10em;
-    height: auto;
-    margin-bottom: 2px; }
-  #seccionventa div table {
+    #cuerpoindex main #seccionconsejos #divs4 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #cuerpoindex main #seccionconsejos #divs4 div span {
+        line-height: 25px;
+        word-spacing: 5px; }
+    #cuerpoindex main #seccionconsejos div audio {
+      display: none; }
+    #cuerpoindex main #seccionconsejos div div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center; }
+      #cuerpoindex main #seccionconsejos div div img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2px; }
+  #cuerpoindex main #seccioncomenta div img {
     display: none; }
-  /*=== home/seccion 4 - consejos ===*/
-  #seccionconsejos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
-  #divs4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
-  #divs4 div span {
-    font-size: 75%;
-    line-height: 25px; }
-  #seccionconsejos div div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center; }
-  #seccionconsejos div div img {
-    width: 10em;
-    height: auto;
-    margin-bottom: 2px; }
-  #seccionconsejos div audio {
-    display: none; }
-  /*=== Home/footer ===*/
-  footer {
-    border: solid 2px indigo;
+  #cuerpoindex footer {
     display: flex;
     flex-direction: column; }
-  #fproveedores div {
-    width: 80%;
-    display: flex;
-    flex-direction: column; }
-  #fproveedores div img {
-    width: 50%; }
-  #fcontacto div {
-    font-size: 90%;
-    width: auto;
-    height: auto;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
-  #fcontacto div div div ul {
-    text-align: center;
-    margin: 0px 3px 0px 3px; }
-  #divmapa {
-    transform: translateX(0px); }
-  iframe {
-    width: 70%; }
-  #divate {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
-  #divatencion {
-    text-align: center; }
-  #divnewsletter {
-    transform: translateX(0px); }
-  #divredes {
-    display: flex;
-    flex-direction: row; }
-  #copydesk {
-    display: none; }
-  #copymobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    #cuerpoindex footer #fproveedores div {
+      width: 80%;
+      display: flex;
+      flex-direction: column; }
+      #cuerpoindex footer #fproveedores div img {
+        width: 50%; }
+    #cuerpoindex footer #fcontacto div {
+      font-size: 90%;
+      width: auto;
+      height: auto;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #cuerpoindex footer #fcontacto div div div ul {
+        text-align: center;
+        margin: 0px 3px 0px 3px; }
+      #cuerpoindex footer #fcontacto div #divmapa {
+        transform: translateX(0px); }
+        #cuerpoindex footer #fcontacto div #divmapa iframe {
+          width: 70%; }
+      #cuerpoindex footer #fcontacto div #divate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; }
+        #cuerpoindex footer #fcontacto div #divate div #divatencion {
+          text-align: center; }
+      #cuerpoindex footer #fcontacto div #divnewsletter {
+        transform: translateX(0px); }
+    #cuerpoindex footer #finfo {
+      width: 100%;
+      height: auto; }
+      #cuerpoindex footer #finfo div #divredes {
+        display: flex;
+        flex-direction: row;
+        transform: translate(-10px, 10px); }
+      #cuerpoindex footer #finfo #copydesk {
+        display: none; }
+      #cuerpoindex footer #finfo #copymobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px; }
+    #cuerpoindex footer .ache4 {
+      margin: 2px 0 2px 0; }
+  #cuerpos1 header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr, 2fr, 3fr;
+    grid-template-areas: "barrafija" "navbarra" "lignina";
+    justify-items: center;
     align-items: center;
-    margin-top: 10px; }
-  .ache4 {
-    margin: 2px 0 2px 0; }
-  /*seccion 2 - categorías*/
-  #mains2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none; }
-  #mains2 h2 {
-    margin-top: 5px; }
-  #mains2 div {
-    margin: 10px; } }
+    font-size: 60%; }
+    #cuerpos1 header #barrafija {
+      grid-area: barrafija;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #cuerpos1 header #barrafija a {
+        transition: none; }
+        #cuerpos1 header #barrafija a #carrito {
+          width: 50%;
+          height: auto;
+          transform: translateX(19.5px); }
+      #cuerpos1 header #barrafija img {
+        transition: none; }
+      #cuerpos1 header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    #cuerpos1 header #navbarra {
+      grid-area: navbarra; }
+      #cuerpos1 header #navbarra nav ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "nos" "cat" "ven" "con" "come";
+        justify-items: center;
+        align-items: center;
+        margin-top: 10px;
+        transform: translateX(-20px); }
+        #cuerpos1 header #navbarra nav ul li div button {
+          height: 37px;
+          width: auto; }
+        #cuerpos1 header #navbarra nav ul #nos {
+          grid-area: nos; }
+        #cuerpos1 header #navbarra nav ul #cat {
+          grid-area: cat; }
+        #cuerpos1 header #navbarra nav ul #ven {
+          grid-area: ven; }
+        #cuerpos1 header #navbarra nav ul #con {
+          grid-area: con; }
+        #cuerpos1 header #navbarra nav ul #come {
+          grid-area: come; }
+    #cuerpos1 header #lignina {
+      grid-area: lignina;
+      align-items: center;
+      margin: 0px;
+      padding: 0px; }
+    #cuerpos1 header .lignina {
+      background: none;
+      box-shadow: none; }
+      #cuerpos1 header .lignina h1 {
+        animation: none;
+        font-size: 400%;
+        letter-spacing: 10px;
+        width: 100%; }
+  #cuerpos2 {
+    /*seccion 2 - categorías*/ }
+    #cuerpos2 #mains2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: none; }
+    #cuerpos2 #mains2 h2 {
+      margin-top: 5px; }
+    #cuerpos2 #mains2 div {
+      margin: 10px; } }
 
 /*
 @media only screen and (min-width: 1200px) {
