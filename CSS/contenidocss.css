@@ -216,6 +216,10 @@ main .parrafo1 {
 main .sobresalir:hover {
   transform: scale(1.1); }
 
+main .ache4:hover {
+  color: chocolate;
+  font-weight: 600; }
+
 main section div a {
   text-decoration: none; }
 
@@ -287,58 +291,63 @@ main .contenedors2:hover .hijos2 {
 main #seccionventa {
   border: solid 5px #804000;
   padding: 0 10px 0 5px;
-  margin: 0 0 5px 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  main #seccionventa div {
+  main #seccionventa div div span {
+    margin-left: 1px;
+    margin-right: 1px; }
+  main #seccionventa div table {
+    width: 85vmax;
+    border: 1px solid #c7850b;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin: 0; }
+    main #seccionventa div table tr td {
+      width: 95vw;
+      text-align: left;
+      vertical-align: middle;
+      border: 1px solid #c7850b; }
+    main #seccionventa div table #criterios {
+      background-color: #ce8c22;
+      text-align: center;
+      font-style: italic;
+      color: #381e1e; }
+  main #seccionventa div .columna1 {
+    color: #661616;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger; }
+  main #seccionventa div .columna2 {
+    color: #661616; }
+  main #seccionventa div .columna3 {
+    color: #661616;
+    font-weight: bold;
+    text-align: center; }
+  main #seccionventa div .columna4 {
+    color: #661616; }
+  main #seccionventa div .columna5 {
+    color: #661616; }
+  main #seccionventa #tituloppal {
     margin: 10px 4px 5px 4px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; }
-    main #seccionventa div div span {
-      margin-left: 1px;
-      margin-right: 1px; }
-    main #seccionventa div table {
-      width: 85vmax;
-      border: 1px solid #c7850b;
-      border-spacing: 0;
-      border-collapse: collapse;
-      font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-      margin: 0; }
-      main #seccionventa div table tr td {
-        width: 95vw;
-        text-align: left;
-        vertical-align: middle;
-        border: 1px solid #c7850b; }
-      main #seccionventa div table #criterios {
-        background-color: #ce8c22;
-        text-align: center;
-        font-style: italic;
-        color: #381e1e; }
-    main #seccionventa div .columna1 {
-      color: #661616;
-      text-align: center;
-      font-weight: bold;
-      font-size: larger; }
-    main #seccionventa div .columna2 {
-      color: #661616; }
-    main #seccionventa div .columna3 {
-      color: #661616;
-      font-weight: bold;
-      text-align: center; }
-    main #seccionventa div .columna4 {
-      color: #661616; }
-    main #seccionventa div .columna5 {
-      color: #661616; }
+    main #seccionventa #tituloppal div {
+      margin: 0 10px 0 10px; }
   main #seccionventa #divs3 {
-    margin: 0 1.5vw 0 0.5vw;
+    margin: 0 2vw 0 0.5vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; }
+    main #seccionventa #divs3 div #bancos3 {
+      width: 900px;
+      height: auto; }
 
 main #seccionconsejos {
   margin: 0;
@@ -367,13 +376,16 @@ main #seccioncomenta {
   main #seccioncomenta div {
     display: flex;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    margin: 5px 0 5px 0; }
     main #seccioncomenta div div span {
       margin-left: 1px;
       margin-right: 1px; }
-    main #seccioncomenta div img {
-      width: 90%;
-      margin: 10px 0 5px 0; }
+  main #seccioncomenta .sombra {
+    box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.438); }
+    main #seccioncomenta .sombra img {
+      width: 100%;
+      height: auto; }
 
 @keyframes goma {
   0% {
@@ -388,35 +400,6 @@ main #seccioncomenta {
     transform: scale3d(1.05, 0.95, 1); }
   100% {
     transform: scale3d(1, 1, 1); } }
-
-main div div div div .contimagen {
-  position: relative;
-  width: 600px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-main div div div div div .sombra {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 0px 0px 12px 8px #e2ac7a;
-  top: 0;
-  left: 0; }
-
-main div div div div div .tamaño2 {
-  width: 600px;
-  height: auto;
-  box-shadow: 0px 0px 15px 12px rgba(226, 172, 122, 0.794); }
-
-main div div div div div div .tamaño {
-  width: 290px !important;
-  height: 175px !important;
-  border: solid 3px rgba(255, 255, 255, 0.794) !important;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
 
 /*Títulos y parrafos en todas las secciones*/
 .ache2 {
@@ -487,6 +470,35 @@ span {
 .volver:hover {
   transform: scale(1.1);
   background-color: rgba(235, 206, 206, 0.5); }
+
+main div div div div .contimagen {
+  position: relative;
+  width: 600px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+main div div div div div .sombra {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 12px 8px #e2ac7a;
+  top: 0;
+  left: 0; }
+
+main div div div div div .tamaño2 {
+  width: 600px;
+  height: auto;
+  box-shadow: 0px 0px 15px 12px rgba(226, 172, 122, 0.794); }
+
+main div div div div div div .tamaño {
+  width: 290px !important;
+  height: 175px !important;
+  border: solid 3px rgba(255, 255, 255, 0.794) !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 #mains2 {
   /* border: solid 3px black; */
