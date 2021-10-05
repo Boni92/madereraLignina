@@ -1,5 +1,5 @@
 @charset "UTF-8";
-#cuerpom {
+.cuerpom {
   font-family: 'Open Sans', sans-serif !important;
   margin: 50px;
   margin-top: 10px;
@@ -7,15 +7,15 @@
   padding: 10px;
   background-image: url("../img/tinified/MADERA4.png");
   background-repeat: repeat; }
-  #cuerpom #contflecha {
+  .cuerpom #contflecha {
     position: sticky;
     top: 50px; }
-  #cuerpom header div div {
+  .cuerpom header div div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    #cuerpom header div div nav ul {
+    .cuerpom header div div nav ul {
       text-decoration: none;
       color: #000;
       list-style: none;
@@ -23,7 +23,7 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: center; }
-      #cuerpom header div div nav ul .hovergradual {
+      .cuerpom header div div nav ul .hovergradual {
         display: flex;
         flex-direction: column;
         width: auto;
@@ -34,19 +34,19 @@
         background: linear-gradient(311deg, #703a0d 0%, rgba(255, 122, 33, 0.386992) 50%, #d27b00 100%);
         box-shadow: inset 0 0 4px 3px #e2ac7a;
         transition: all 1s; }
-      #cuerpom header div div nav ul .hovergradual:hover {
+      .cuerpom header div div nav ul .hovergradual:hover {
         transform: scale(1.1);
         background-color: rgba(250, 11, 11, 0.76); }
-      #cuerpom header div div nav ul li a {
+      .cuerpom header div div nav ul li a {
         text-decoration: none;
         color: #000;
         font-style: italic; }
-      #cuerpom header div div nav ul li a:hover {
+      .cuerpom header div div nav ul li a:hover {
         color: black; }
-      #cuerpom header div div nav ul li div {
+      .cuerpom header div div nav ul li div {
         display: flex;
         flex-direction: row; }
-        #cuerpom header div div nav ul li div input[type=text] {
+        .cuerpom header div div nav ul li div input[type=text] {
           float: right;
           padding: 14px;
           border: none;
@@ -57,20 +57,20 @@
           color: black;
           background: linear-gradient(311deg, #703a0d 0%, rgba(255, 122, 33, 0.386992) 50%, #d27b00 100%);
           box-shadow: inset 0 0 4px 3px #e2ac7a; }
-        #cuerpom header div div nav ul li div ::placeholder {
+        .cuerpom header div div nav ul li div ::placeholder {
           color: black;
           opacity: 1;
           font-size: 1.2em;
           font-style: italic;
           text-align: center;
           justify-items: flex-start; }
-        #cuerpom header div div nav ul li div button {
+        .cuerpom header div div nav ul li div button {
           background: linear-gradient(311deg, #703a0d 0%, rgba(255, 122, 33, 0.386992) 50%, #d27b00 100%);
           box-shadow: inset 0 0 4px 3px #e2ac7a;
           height: 2.7em;
           width: 2.7em;
           border: none; }
-  #cuerpom header div #barrafija {
+  .cuerpom header div #barrafija {
     margin: 0 20px 20px 20px;
     display: flex;
     flex-direction: row;
@@ -79,7 +79,7 @@
     background: rgba(255, 255, 255, 0.424);
     box-shadow: inset 0 0 15px 12px rgba(241, 154, 54, 0.883), 0 0 15px 12px rgba(0, 0, 0, 0.438);
     padding: 5px; }
-    #cuerpom header div #barrafija a {
+    .cuerpom header div #barrafija a {
       transition: all 0.5s ease-in-out;
       text-decoration: none;
       color: #000;
@@ -87,43 +87,43 @@
       flex-direction: row;
       justify-content: baseline;
       align-items: flex-start; }
-      #cuerpom header div #barrafija a #carrito {
+      .cuerpom header div #barrafija a #carrito {
         transform: skewX(-30deg);
         transition: all 0.5s ease-in-out; }
-    #cuerpom header div #barrafija #logo {
+    .cuerpom header div #barrafija #logo {
       display: block;
       width: 5%;
       height: 5%;
       padding: 5px 0 5px 0;
       transform: skewX(30deg);
       transition: all 0.5s ease-in-out; }
-    #cuerpom header div #barrafija #carrito:hover {
+    .cuerpom header div #barrafija #carrito:hover {
       transform: scale(1.1); }
-    #cuerpom header div #barrafija #logo:hover {
+    .cuerpom header div #barrafija #logo:hover {
       transform: scale(1.1); }
-    #cuerpom header div #barrafija #registro {
+    .cuerpom header div #barrafija #registro {
       width: auto;
       border-radius: 60%;
       font-weight: 500;
       padding: 5px;
       background: radial-gradient(rgba(252, 255, 251, 0.9) 0%, rgba(206, 179, 104, 0.4) 30%, rgba(218, 186, 81, 0.01) 70%, rgba(226, 219, 197, 0) 70%, rgba(201, 165, 132, 0.9) 100%); }
-    #cuerpom header div #barrafija #ingreso {
+    .cuerpom header div #barrafija #ingreso {
       width: auto;
       font-weight: 500;
       border-radius: 60%;
       padding: 5px;
       background: radial-gradient(rgba(252, 255, 251, 0.9) 0%, rgba(206, 179, 104, 0.4) 30%, rgba(218, 186, 81, 0.01) 70%, rgba(226, 219, 197, 0) 70%, rgba(201, 165, 132, 0.9) 100%); }
-    #cuerpom header div #barrafija #registro:hover {
+    .cuerpom header div #barrafija #registro:hover {
       transform: scale(1.1);
       background-color: rgba(235, 206, 206, 0.5); }
-    #cuerpom header div #barrafija #ingreso:hover {
+    .cuerpom header div #barrafija #ingreso:hover {
       transform: scale(1.1);
       background-color: rgba(235, 206, 206, 0.5); }
-  #cuerpom header div .lignina {
+  .cuerpom header div .lignina {
     padding: 20px 0 20px 0;
     background-image: url("../img/imagen_principal2.jpg");
     box-shadow: inset 0 0 4px 3px #e2ac7a; }
-    #cuerpom header div .lignina h1 {
+    .cuerpom header div .lignina h1 {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -132,7 +132,7 @@
       animation-iteration-count: 1;
       animation-timing-function: ease-in-out;
       animation-duration: 5s; }
-    #cuerpom header div .lignina .ache1 {
+    .cuerpom header div .lignina .ache1 {
       color: chocolate;
       font-style: italic;
       font-weight: bold;
@@ -975,7 +975,7 @@ footer {
     footer #finfo #copymobile {
       display: none; }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
   header {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
