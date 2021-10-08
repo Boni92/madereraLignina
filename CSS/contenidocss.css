@@ -1779,37 +1779,894 @@ footer {
       justify-content: center;
       align-items: center; } }
 
-/*
-@media only screen and (min-width: 1200px) {
-    header{
-        background-color: none;
-        border: solid 5px none;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: 1fr, 2fr, 3fr;
-        grid-template-areas: 
-            "barrafija"
-            "navbar"
-            "lignina";
-        justify-items: center;
+@media only screen and (max-width: 768px) {
+  #cuerpoindex header {
+    font-size: 90%; }
+    #cuerpoindex header #barrafija {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #cuerpoindex header #barrafija a {
+        transition: none; }
+        #cuerpoindex header #barrafija a #carrito {
+          width: 90%;
+          height: auto; }
+      #cuerpoindex header #barrafija img {
+        transition: none; }
+      #cuerpoindex header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    #cuerpoindex header #navbarra nav ul {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "nos" "cat" "ven" "con" "come";
+      justify-items: center;
+      align-items: center;
+      margin-top: 10px;
+      transform: translateX(-20px); }
+      #cuerpoindex header #navbarra nav ul li div button {
+        height: 37px;
+        width: auto; }
+      #cuerpoindex header #navbarra nav ul #nos {
+        grid-area: nos; }
+      #cuerpoindex header #navbarra nav ul #cat {
+        grid-area: cat; }
+      #cuerpoindex header #navbarra nav ul #ven {
+        grid-area: ven; }
+      #cuerpoindex header #navbarra nav ul #con {
+        grid-area: con; }
+      #cuerpoindex header #navbarra nav ul #come {
+        grid-area: come; }
+    #cuerpoindex header #lignina {
+      align-items: center;
+      margin: 0px;
+      padding: 0px; }
+    #cuerpoindex header .lignina {
+      background: none;
+      box-shadow: none; }
+      #cuerpoindex header .lignina h1 {
+        animation: none;
+        font-size: 400%;
+        letter-spacing: 10px;
+        width: 100%; }
+  #cuerpoindex main section {
+    font-size: 75%; }
+    #cuerpoindex main section div .imagen {
+      width: 90%;
+      height: auto;
+      margin-bottom: 5px; }
+  #cuerpoindex main #seccioncatego {
+    margin-bottom: 0px; }
+    #cuerpoindex main #seccioncatego div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #cuerpoindex main #seccioncatego div div .titulo {
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        align-items: center; }
+      #cuerpoindex main #seccioncatego div div div a div img {
+        display: none; }
+  #cuerpoindex main #seccionventa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #cuerpoindex main #seccionventa div div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center; }
+      #cuerpoindex main #seccionventa div div img {
+        width: 10em;
+        height: auto;
+        margin-bottom: 2px; }
+    #cuerpoindex main #seccionventa div table {
+      display: none; }
+    #cuerpoindex main #seccionventa #divs3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #cuerpoindex main #seccionventa #divs3 div span {
+        line-height: 25px;
+        font-weight: 500;
+        word-spacing: 5px; }
+    #cuerpoindex main #seccionventa #tituloppal {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      #cuerpoindex main #seccionventa #tituloppal div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+  #cuerpoindex main .ache2 {
+    text-align: center; }
+  #cuerpoindex main .alineacion {
+    text-align: center;
+    text-decoration: none;
+    text-transform: none; }
+  #cuerpoindex main #seccionconsejos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; }
+    #cuerpoindex main #seccionconsejos #divs4 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #cuerpoindex main #seccionconsejos #divs4 div span {
+        line-height: 25px;
+        word-spacing: 5px; }
+    #cuerpoindex main #seccionconsejos div audio {
+      display: none; }
+    #cuerpoindex main #seccionconsejos div div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center; }
+      #cuerpoindex main #seccionconsejos div div img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2px; }
+  #cuerpoindex main #seccioncomenta div img {
+    display: none; }
+  #cuerpoindex footer {
+    display: flex;
+    flex-direction: column; }
+    #cuerpoindex footer #fproveedores div {
+      width: 80%;
+      display: flex;
+      flex-direction: column; }
+      #cuerpoindex footer #fproveedores div img {
+        width: 50%; }
+    #cuerpoindex footer #fcontacto div {
+      font-size: 90%;
+      width: auto;
+      height: auto;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #cuerpoindex footer #fcontacto div div div ul {
+        text-align: center;
+        margin: 0px 3px 0px 3px; }
+      #cuerpoindex footer #fcontacto div #divmapa {
+        transform: translateX(0px); }
+        #cuerpoindex footer #fcontacto div #divmapa iframe {
+          width: 70%; }
+      #cuerpoindex footer #fcontacto div #divate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; }
+        #cuerpoindex footer #fcontacto div #divate div #divatencion {
+          text-align: center; }
+      #cuerpoindex footer #fcontacto div #divnewsletter {
+        transform: translateX(0px); }
+    #cuerpoindex footer #finfo {
+      width: 100%;
+      height: auto; }
+      #cuerpoindex footer #finfo div #divredes {
+        display: flex;
+        flex-direction: row;
+        transform: translate(-10px, 10px); }
+      #cuerpoindex footer #finfo #copydesk {
+        display: none; }
+      #cuerpoindex footer #finfo #copymobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-    }
-    #barrafija{
-        grid-area: barrafija;
-    }
-    #navbar{
-        grid-area: navbar;
-    }
-    #lignina{
-        grid-area: lignina;
+        margin-top: 10px; }
+    #cuerpoindex footer .ache4 {
+      margin: 2px 0 2px 0; }
+  #cuerpos1 header {
+    font-size: 90%; }
+    #cuerpos1 header #barrafija {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #cuerpos1 header #barrafija a {
+        transition: none; }
+        #cuerpos1 header #barrafija a #carrito {
+          width: 50%;
+          height: auto;
+          transform: translateX(19.5px); }
+      #cuerpos1 header #barrafija img {
+        transition: none; }
+      #cuerpos1 header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    #cuerpos1 header #navbarra nav ul {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "nos" "cat" "ven" "con" "come";
+      justify-items: center;
+      align-items: center;
+      margin-top: 10px;
+      transform: translateX(-20px); }
+      #cuerpos1 header #navbarra nav ul li div button {
+        height: 37px;
+        width: auto; }
+      #cuerpos1 header #navbarra nav ul #nos {
+        grid-area: nos; }
+      #cuerpos1 header #navbarra nav ul #cat {
+        grid-area: cat; }
+      #cuerpos1 header #navbarra nav ul #ven {
+        grid-area: ven; }
+      #cuerpos1 header #navbarra nav ul #con {
+        grid-area: con; }
+      #cuerpos1 header #navbarra nav ul #come {
+        grid-area: come; }
+  #cuerpos1 main div div {
+    text-align: center; }
+    #cuerpos1 main div div p {
+      text-align: justify; }
+  #cuerpos1 main div .container div div #imgtroncos {
+    display: none; }
+  #cuerpos1 footer {
+    display: flex;
+    flex-direction: column; }
+    #cuerpos1 footer #fproveedores div {
+      width: 80%;
+      display: flex;
+      flex-direction: column; }
+      #cuerpos1 footer #fproveedores div img {
+        width: 50%; }
+    #cuerpos1 footer #fcontacto div {
+      font-size: 90%;
+      width: auto;
+      height: auto;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #cuerpos1 footer #fcontacto div div div ul {
+        text-align: center;
+        margin: 0px 3px 0px 3px; }
+      #cuerpos1 footer #fcontacto div #divmapa {
+        transform: translateX(0px); }
+        #cuerpos1 footer #fcontacto div #divmapa iframe {
+          width: 70%; }
+      #cuerpos1 footer #fcontacto div #divate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; }
+        #cuerpos1 footer #fcontacto div #divate div #divatencion {
+          text-align: center; }
+      #cuerpos1 footer #fcontacto div #divnewsletter {
+        transform: translateX(0px); }
+    #cuerpos1 footer #finfo {
+      width: 100%;
+      height: auto; }
+      #cuerpos1 footer #finfo div #divredes {
+        display: flex;
+        flex-direction: row;
+        transform: translate(-10px, 10px); }
+      #cuerpos1 footer #finfo #copydesk {
+        display: none; }
+      #cuerpos1 footer #finfo #copymobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-    }
-    #nombreh1{
-        transform: none;
-    }
-    #logo{
+        margin-top: 10px; }
+    #cuerpos1 footer .ache4 {
+      margin: 2px 0 2px 0; }
+  #cuerpos2 header {
+    font-size: 90%; }
+    #cuerpos2 header #barrafija {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #cuerpos2 header #barrafija a {
+        transition: none; }
+        #cuerpos2 header #barrafija a #carrito {
+          width: 80%;
+          height: auto; }
+      #cuerpos2 header #barrafija img {
+        transition: none; }
+      #cuerpos2 header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    #cuerpos2 header #navbarra nav ul {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "nos" "cat" "ven" "con" "come";
+      justify-items: center;
+      align-items: center;
+      margin-top: 10px;
+      transform: translateX(-20px); }
+      #cuerpos2 header #navbarra nav ul li div button {
+        height: 37px;
+        width: auto; }
+      #cuerpos2 header #navbarra nav ul #nos {
+        grid-area: nos; }
+      #cuerpos2 header #navbarra nav ul #cat {
+        grid-area: cat; }
+      #cuerpos2 header #navbarra nav ul #ven {
+        grid-area: ven; }
+      #cuerpos2 header #navbarra nav ul #con {
+        grid-area: con; }
+      #cuerpos2 header #navbarra nav ul #come {
+        grid-area: come; }
+  #cuerpos2 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none; }
+    #cuerpos2 main div {
+      margin: 0 0 10px 0; }
+      #cuerpos2 main div #contentrada {
+        margin: 0; }
+    #cuerpos2 main #titulos2 {
+      width: 100%; }
+      #cuerpos2 main #titulos2 h2 {
+        text-align: center; }
+  #cuerpos2 footer {
+    display: flex;
+    flex-direction: column; }
+    #cuerpos2 footer #fproveedores div {
+      width: 80%;
+      display: flex;
+      flex-direction: column; }
+      #cuerpos2 footer #fproveedores div img {
+        width: 50%; }
+    #cuerpos2 footer #fcontacto div {
+      font-size: 90%;
+      width: auto;
+      height: auto;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #cuerpos2 footer #fcontacto div div div ul {
+        text-align: center;
+        margin: 0px 3px 0px 3px; }
+      #cuerpos2 footer #fcontacto div #divmapa {
+        transform: translateX(0px); }
+        #cuerpos2 footer #fcontacto div #divmapa iframe {
+          width: 70%; }
+      #cuerpos2 footer #fcontacto div #divate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; }
+        #cuerpos2 footer #fcontacto div #divate div #divatencion {
+          text-align: center; }
+      #cuerpos2 footer #fcontacto div #divnewsletter {
+        transform: translateX(0px); }
+    #cuerpos2 footer #finfo {
+      width: 100%;
+      height: auto; }
+      #cuerpos2 footer #finfo div #divredes {
+        display: flex;
+        flex-direction: row;
+        transform: translate(-10px, 10px); }
+      #cuerpos2 footer #finfo #copydesk {
+        display: none; }
+      #cuerpos2 footer #finfo #copymobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px; }
+    #cuerpos2 footer .ache4 {
+      margin: 2px 0 2px 0; }
+  #cuerpos3 header {
+    font-size: 90%; }
+    #cuerpos3 header #barrafija {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #cuerpos3 header #barrafija a {
+        transition: none; }
+        #cuerpos3 header #barrafija a #carrito {
+          width: 80%;
+          height: auto; }
+      #cuerpos3 header #barrafija img {
+        transition: none; }
+      #cuerpos3 header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    #cuerpos3 header #navbarra nav ul {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "nos" "cat" "ven" "con" "come";
+      justify-items: center;
+      align-items: center;
+      margin-top: 10px;
+      transform: translateX(-20px); }
+      #cuerpos3 header #navbarra nav ul li div button {
+        height: 37px;
+        width: auto; }
+      #cuerpos3 header #navbarra nav ul #nos {
+        grid-area: nos; }
+      #cuerpos3 header #navbarra nav ul #cat {
+        grid-area: cat; }
+      #cuerpos3 header #navbarra nav ul #ven {
+        grid-area: ven; }
+      #cuerpos3 header #navbarra nav ul #con {
+        grid-area: con; }
+      #cuerpos3 header #navbarra nav ul #come {
+        grid-area: come; }
+  #cuerpos3 main div {
+    width: 100%; }
+    #cuerpos3 main div div div p {
+      text-align: justify; }
+    #cuerpos3 main div div div div table {
+      width: 100%;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #cuerpos3 main div div div div table tr:first-child {
+        display: none; }
+      #cuerpos3 main div div div div table tr td:first-child {
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1em; }
+      #cuerpos3 main div div div div table tr td {
+        display: block;
+        text-align: center;
+        margin: 0 !important; }
+      #cuerpos3 main div div div div table tr #criterios {
+        display: none; }
+    #cuerpos3 main div div #imgs3, #cuerpos3 main div div #imgsemA, #cuerpos3 main div div #imgsemB, #cuerpos3 main div div #imgsemC, #cuerpos3 main div div #imgsemD {
+      max-width: 100%; }
+      #cuerpos3 main div div #imgs3 img, #cuerpos3 main div div #imgsemA img, #cuerpos3 main div div #imgsemB img, #cuerpos3 main div div #imgsemC img, #cuerpos3 main div div #imgsemD img {
+        width: 100% !important; }
+    #cuerpos3 main div #linkcomprar {
+      max-width: 40%; }
+      #cuerpos3 main div #linkcomprar a h4 {
+        text-align: center; }
+  #cuerpos3 main #titulos3, #cuerpos3 main #tituloantiguos3 {
+    width: 100%; }
+    #cuerpos3 main #titulos3 h2, #cuerpos3 main #tituloantiguos3 h2 {
+      text-align: center; }
+  #cuerpos3 footer {
+    display: flex;
+    flex-direction: column; }
+    #cuerpos3 footer #fproveedores div {
+      width: 80%;
+      display: flex;
+      flex-direction: column; }
+      #cuerpos3 footer #fproveedores div img {
+        width: 50%; }
+    #cuerpos3 footer #fcontacto div {
+      font-size: 90%;
+      width: auto;
+      height: auto;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #cuerpos3 footer #fcontacto div div div ul {
+        text-align: center;
+        margin: 0px 3px 0px 3px; }
+      #cuerpos3 footer #fcontacto div #divmapa {
+        transform: translateX(0px); }
+        #cuerpos3 footer #fcontacto div #divmapa iframe {
+          width: 70%; }
+      #cuerpos3 footer #fcontacto div #divate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; }
+        #cuerpos3 footer #fcontacto div #divate div #divatencion {
+          text-align: center; }
+      #cuerpos3 footer #fcontacto div #divnewsletter {
+        transform: translateX(0px); }
+    #cuerpos3 footer #finfo {
+      width: 100%;
+      height: auto; }
+      #cuerpos3 footer #finfo div #divredes {
+        display: flex;
+        flex-direction: row;
+        transform: translate(-10px, 10px); }
+      #cuerpos3 footer #finfo #copydesk {
+        display: none; }
+      #cuerpos3 footer #finfo #copymobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px; }
+    #cuerpos3 footer .ache4 {
+      margin: 2px 0 2px 0; }
+  #cuerpos4 header {
+    font-size: 90%; }
+    #cuerpos4 header #barrafija {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #cuerpos4 header #barrafija a {
+        transition: none; }
+        #cuerpos4 header #barrafija a #carrito {
+          width: 80%;
+          height: auto; }
+      #cuerpos4 header #barrafija img {
+        transition: none; }
+      #cuerpos4 header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    #cuerpos4 header #navbarra nav ul {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "nos" "cat" "ven" "con" "come";
+      justify-items: center;
+      align-items: center;
+      margin-top: 10px;
+      transform: translateX(-20px); }
+      #cuerpos4 header #navbarra nav ul li div button {
+        height: 37px;
+        width: auto; }
+      #cuerpos4 header #navbarra nav ul #nos {
+        grid-area: nos; }
+      #cuerpos4 header #navbarra nav ul #cat {
+        grid-area: cat; }
+      #cuerpos4 header #navbarra nav ul #ven {
+        grid-area: ven; }
+      #cuerpos4 header #navbarra nav ul #con {
+        grid-area: con; }
+      #cuerpos4 header #navbarra nav ul #come {
+        grid-area: come; }
+  #cuerpos4 main div {
+    width: 100%; }
+    #cuerpos4 main div div p {
+      text-align: justify; }
+    #cuerpos4 main div div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #cuerpos4 main div div div div img {
+        width: 100%;
+        margin-top: 5px; }
+    #cuerpos4 main div #linkcomprar {
+      max-width: 40%; }
+      #cuerpos4 main div #linkcomprar a h4 {
+        text-align: center; }
+  #cuerpos4 main #titulos4 {
+    width: 100%; }
+    #cuerpos4 main #titulos4 h2 {
+      text-align: center; }
+  #cuerpos4 footer {
+    display: flex;
+    flex-direction: column; }
+    #cuerpos4 footer #fproveedores div {
+      width: 80%;
+      display: flex;
+      flex-direction: column; }
+      #cuerpos4 footer #fproveedores div img {
+        width: 50%; }
+    #cuerpos4 footer #fcontacto div {
+      font-size: 90%;
+      width: auto;
+      height: auto;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #cuerpos4 footer #fcontacto div div div ul {
+        text-align: center;
+        margin: 0px 3px 0px 3px; }
+      #cuerpos4 footer #fcontacto div #divmapa {
+        transform: translateX(0px); }
+        #cuerpos4 footer #fcontacto div #divmapa iframe {
+          width: 70%; }
+      #cuerpos4 footer #fcontacto div #divate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; }
+        #cuerpos4 footer #fcontacto div #divate div #divatencion {
+          text-align: center; }
+      #cuerpos4 footer #fcontacto div #divnewsletter {
+        transform: translateX(0px); }
+    #cuerpos4 footer #finfo {
+      width: 100%;
+      height: auto; }
+      #cuerpos4 footer #finfo div #divredes {
+        display: flex;
+        flex-direction: row;
+        transform: translate(-10px, 10px); }
+      #cuerpos4 footer #finfo #copydesk {
+        display: none; }
+      #cuerpos4 footer #finfo #copymobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px; }
+    #cuerpos4 footer .ache4 {
+      margin: 2px 0 2px 0; }
+  #cuerpos5 header {
+    font-size: 90%; }
+    #cuerpos5 header #barrafija {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #cuerpos5 header #barrafija a {
+        transition: none; }
+        #cuerpos5 header #barrafija a #carrito {
+          width: 80%;
+          height: auto; }
+      #cuerpos5 header #barrafija img {
+        transition: none; }
+      #cuerpos5 header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    #cuerpos5 header #navbarra nav ul {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "nos" "cat" "ven" "con" "come";
+      justify-items: center;
+      align-items: center;
+      margin-top: 10px;
+      transform: translateX(-20px); }
+      #cuerpos5 header #navbarra nav ul li div button {
+        height: 37px;
+        width: auto; }
+      #cuerpos5 header #navbarra nav ul #nos {
+        grid-area: nos; }
+      #cuerpos5 header #navbarra nav ul #cat {
+        grid-area: cat; }
+      #cuerpos5 header #navbarra nav ul #ven {
+        grid-area: ven; }
+      #cuerpos5 header #navbarra nav ul #con {
+        grid-area: con; }
+      #cuerpos5 header #navbarra nav ul #come {
+        grid-area: come; }
+  #cuerpos5 main div div {
+    text-align: center; }
+    #cuerpos5 main div div p {
+      text-align: justify; }
+  #cuerpos5 main div .container div div #imgtroncos {
+    display: none; }
+  #cuerpos5 footer {
+    display: flex;
+    flex-direction: column; }
+    #cuerpos5 footer #fproveedores div {
+      width: 80%;
+      display: flex;
+      flex-direction: column; }
+      #cuerpos5 footer #fproveedores div img {
+        width: 50%; }
+    #cuerpos5 footer #fcontacto div {
+      font-size: 90%;
+      width: auto;
+      height: auto;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      #cuerpos5 footer #fcontacto div div div ul {
+        text-align: center;
+        margin: 0px 3px 0px 3px; }
+      #cuerpos5 footer #fcontacto div #divmapa {
+        transform: translateX(0px); }
+        #cuerpos5 footer #fcontacto div #divmapa iframe {
+          width: 70%; }
+      #cuerpos5 footer #fcontacto div #divate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; }
+        #cuerpos5 footer #fcontacto div #divate div #divatencion {
+          text-align: center; }
+      #cuerpos5 footer #fcontacto div #divnewsletter {
+        transform: translateX(0px); }
+    #cuerpos5 footer #finfo {
+      width: 100%;
+      height: auto; }
+      #cuerpos5 footer #finfo div #divredes {
+        display: flex;
+        flex-direction: row;
+        transform: translate(-10px, 10px); }
+      #cuerpos5 footer #finfo #copydesk {
+        display: none; }
+      #cuerpos5 footer #finfo #copymobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px; }
+    #cuerpos5 footer .ache4 {
+      margin: 2px 0 2px 0; }
+  #cuerpoingreso header {
+    font-size: 90%; }
+    #cuerpoingreso header #barrafija {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #cuerpoingreso header #barrafija a {
+        transition: none; }
+        #cuerpoingreso header #barrafija a #carrito {
+          width: 80%;
+          height: auto; }
+      #cuerpoingreso header #barrafija img {
+        transition: none; }
+      #cuerpoingreso header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    #cuerpoingreso header #volver {
+      width: 100%;
+      margin: 10px 0 30px 0; }
+  #cuerporegistro header {
+    font-size: 90%; }
+    #cuerporegistro header #barrafija {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #cuerporegistro header #barrafija a {
+        transition: none; }
+        #cuerporegistro header #barrafija a #carrito {
+          width: 80%;
+          height: auto; }
+      #cuerporegistro header #barrafija img {
+        transition: none; }
+      #cuerporegistro header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    #cuerporegistro header .volver {
+      width: 100%;
+      margin: 10px 0 30px 0; }
+  #cuerpocarro header {
+    font-size: 90%; }
+    #cuerpocarro header #barrafija {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #cuerpocarro header #barrafija a {
+        transition: none; }
+        #cuerpocarro header #barrafija a #carrito {
+          width: 80%;
+          height: auto; }
+      #cuerpocarro header #barrafija img {
+        transition: none; }
+      #cuerpocarro header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    #cuerpocarro header #volver {
+      width: 100%;
+      padding: 10px 0 10px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; } }
+
+@media only screen and (max-width: 1200px) {
+  header {
+    font-size: 100%; }
+    header #barrafija {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      header #barrafija a {
+        transition: none; }
+        header #barrafija a #carrito {
+          width: 100%;
+          height: auto; }
+      header #barrafija img {
+        transition: none; }
+      header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    header #navbarra nav ul {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "nos" "cat" "ven" "con" "come";
+      justify-items: center;
+      align-items: center;
+      margin-top: 10px;
+      transform: translateX(-20px); }
+      header #navbarra nav ul li div button {
+        height: 37px;
+        width: auto; }
+      header #navbarra nav ul #nos {
+        grid-area: nos; }
+      header #navbarra nav ul #cat {
+        grid-area: cat; }
+      header #navbarra nav ul #ven {
+        grid-area: ven; }
+      header #navbarra nav ul #con {
+        grid-area: con; }
+      header #navbarra nav ul #come {
+        grid-area: come; }
+    header #lignina {
+      align-items: center;
+      margin: 0px;
+      padding: 0px; }
+    header .lignina {
+      background: none;
+      box-shadow: none; }
+      header .lignina h1 {
+        animation: none;
+        font-size: 400%;
+        letter-spacing: 10px;
+        width: 100%; } }
+
+@media only screen and (min-width: 2560px) {
+  header {
+    font-size: 150%; }
+    header #barrafija {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      header #barrafija a {
+        transition: none; }
+        header #barrafija a #carrito {
+          transform: none !important;
+          width: 150%;
+          height: auto; }
+      header #barrafija img {
+        transition: none; }
+      header #barrafija #logo {
         display: block;
         width: 10%;
         height: auto;
-    }
-} */
+        transform: none !important; }
+    header #lignina {
+      align-items: center;
+      margin: 0px;
+      padding: 0px; }
+    header .lignina {
+      background: none;
+      box-shadow: none; }
+      header .lignina h1 {
+        animation: none;
+        font-size: 400%;
+        letter-spacing: 10px;
+        width: 100%; }
+  main {
+    font-size: 160%; }
+    main p {
+      font-size: 110%;
+      line-height: 60px; }
+    main span {
+      font-size: 180%;
+      line-height: 60px; } }
