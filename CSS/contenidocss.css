@@ -2629,6 +2629,8 @@ footer {
         font-size: 400%;
         letter-spacing: 10px;
         width: 100%; }
+  #cuerpoindex main #seccionventa div table {
+    display: none; }
   #cuerpos2 header {
     font-size: 90%; }
     #cuerpos2 header #barrafija {
