@@ -104,6 +104,11 @@
                     
                 }
             }
+            #seccionnosotros{
+                img{
+                    display: none;
+                }
+            }
             //=== home seccion 2 - Categorias ===
             #seccioncatego{
                 margin-bottom: 0px;
@@ -576,6 +581,11 @@
                 margin: 0 0 10px 0;
                 #contentrada{
                     margin: 0;
+                }
+                #d13Modal, #dModal{
+                    img{
+                        width: 90%;
+                    }
                 }
             }
             #titulos2{
@@ -1372,9 +1382,9 @@
         }
     }
 }
-    
+
 //========  media query- TABLET  =========/
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     #cuerpoindex{
         
         header{
@@ -1521,7 +1531,7 @@
                         img{
                             width: 10em;
                             height: auto;
-                            margin-bottom: 2px;
+                            transform: translateX(20px);
                         }
                     }
                     table{
@@ -2348,11 +2358,13 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    div{
-                        img{
-                            width: 100%;
-                            margin-top: 5px;
-                        }
+                    .imgcons1, .imgcons2, .imgcons3, .imgcons4{
+                        
+                            display: none;
+                        
+                    }
+                    #tyt{
+                        width: 100%;
                     }
                 }
             }
@@ -2738,11 +2750,10 @@
         }
     }
 }
-    
 
 //========  media query- PANTALLA MEDIANA  =========
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
     header{
         font-size: 100%;
         #barrafija{
@@ -2826,6 +2837,238 @@
                 font-size: 400%;
                 letter-spacing: 10px;
                 width: 100%;
+            }
+        }
+    }
+    #cuerpos2{
+        header{
+            font-size: 90%;
+            #barrafija{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                a{
+                    transition: none;
+                    #carrito{
+                        width: 80%;
+                        height: auto;
+                    }
+                }
+                img{
+                    transition: none;
+                }
+                #logo{
+                    display: block;
+                    width: 10%;
+                    height: auto;
+                }
+        
+            }
+            #navbarra{
+                nav{
+                    ul{
+                        display: grid;
+                        grid-template-columns: repeat(1,1fr);
+                        grid-template-rows: repeat(5,1fr);
+                        grid-template-areas: 
+                            "nos"
+                            "cat"
+                            "ven"
+                            "con"
+                            "come";
+                        justify-items: center;
+                        align-items: center;
+                
+                        margin-top: 10px;
+                        transform: translateX(-20px);
+                        li{
+                            div{
+                                button{
+                                    height: 37px;
+                                    width: auto;
+                                }
+                            }
+                        }
+                        #nos{
+                            grid-area: nos;
+                        }
+                        #cat{
+                            grid-area: cat;
+                        }
+                        #ven{
+                            grid-area: ven;
+                        }
+                        #con{
+                            grid-area: con;
+                        }
+                        #come{
+                            grid-area: come;
+                        }
+                    }
+                }
+
+            }
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            border: none;
+            
+            div{
+                margin: 0 0 10px 0;
+                #contentrada{
+                    margin: 0;
+                }
+            }
+            #titulos2{
+                width: 100%;
+                h2{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    #cuerpos3{
+        header{
+                font-size: 90%;
+                #barrafija{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    a{
+                        transition: none;
+                        #carrito{
+                            width: 80%;
+                            height: auto;
+                        }
+                    }
+                    img{
+                        transition: none;
+                    }
+                    #logo{
+                        display: block;
+                        width: 10%;
+                        height: auto;
+                    }
+            
+                }
+                #navbarra{
+                    nav{
+                        ul{
+                            display: grid;
+                            grid-template-columns: repeat(1,1fr);
+                            grid-template-rows: repeat(5,1fr);
+                            grid-template-areas: 
+                                "nos"
+                                "cat"
+                                "ven"
+                                "con"
+                                "come";
+                            justify-items: center;
+                            align-items: center;
+                    
+                            margin-top: 10px;
+                            transform: translateX(-20px);
+                            li{
+                                div{
+                                    button{
+                                        height: 37px;
+                                        width: auto;
+                                    }
+                                }
+                            }
+                            #nos{
+                                grid-area: nos;
+                            }
+                            #cat{
+                                grid-area: cat;
+                            }
+                            #ven{
+                                grid-area: ven;
+                            }
+                            #con{
+                                grid-area: con;
+                            }
+                            #come{
+                                grid-area: come;
+                            }
+                        }
+                    }
+
+                }
+
+        }
+        main{
+            div{
+                width: 100%;
+                div{
+                    div{
+                        p{
+                            text-align: justify;
+                        }
+                        div{
+                            table {
+                                width:100%;
+                                border: none;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+
+                                tr:first-child{
+                                    display: none;
+                                }
+                                tr {
+                                    td:first-child {
+                                        background: #f0f0f0;
+                                        font-weight:bold;
+                                        font-size:1em;
+                                    }
+                                    td {
+                                        display: block;
+                                        text-align:center;
+                                        margin: 0 !important;
+
+                                    }
+                                    
+                                    #criterios{
+                                        display: none;
+                                    }
+                                }
+                            }
+                            // thead {
+                            //     display: none;
+                            // }
+                            
+                        }
+                    }
+                    #imgs3, #imgsemA, #imgsemB, #imgsemC, #imgsemD{
+                        max-width: 60%;
+                        img{
+                            width: 100% !important;
+                        }
+                    }
+                    
+                }
+            #linkcomprar{
+                max-width: 40%;
+                a{
+                    h4{
+                        text-align: center;
+                    }
+                }
+            }
+            }
+            #titulos3, #tituloantiguos3{
+                width: 100%;
+                h2{
+                    text-align: center;
+                }
             }
         }
     }

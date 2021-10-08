@@ -832,17 +832,13 @@ h3 {
     width: 300px;
     height: auto; }
 
-#mains4 div #intro {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+#mains4 div #consejos div {
+  margin: 0px 0 10px 0; }
 
-#mains4 div #consejos {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-  #mains4 div #consejos div {
-    margin: 0px 0 10px 0; }
-  #mains4 div #consejos #tyt {
-    padding: 0 10px 0 10px; }
-    #mains4 div #consejos #tyt div p {
-      text-align: justify; }
+#mains4 div #consejos #tyt {
+  padding: 0 10px 0 10px; }
+  #mains4 div #consejos #tyt div p {
+    text-align: justify; }
 
 #mains4 div #titulo h2 {
   font-weight: bold;
@@ -856,7 +852,7 @@ h3 {
     font-size: 110%;
     color: #412513; }
 
-.consej-basic {
+#mains4 .consej-basic {
   border-bottom: solid;
   border-width: 1em;
   border-color: #573f1a;
@@ -864,23 +860,23 @@ h3 {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
-  .consej-basic div {
+  #mains4 .consej-basic div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .consej-basic div img {
+    #mains4 .consej-basic div img {
       width: 400px;
       height: auto; }
-    .consej-basic div div {
+    #mains4 .consej-basic div div {
       margin-left: 10px;
       margin-right: 10px; }
-      .consej-basic div div h5 {
+      #mains4 .consej-basic div div h5 {
         color: #412513;
         font-size: 2em;
         width: auto;
         font-weight: 500; }
-      .consej-basic div div p {
+      #mains4 .consej-basic div div p {
         color: #412513;
         width: auto;
         font-weight: 500; }
@@ -1035,6 +1031,8 @@ footer {
       width: 90%;
       height: auto;
       margin-bottom: 5px; }
+  #cuerpoindex main #seccionnosotros img {
+    display: none; }
   #cuerpoindex main #seccioncatego {
     margin-bottom: 0px; }
     #cuerpoindex main #seccioncatego div div {
@@ -1316,6 +1314,8 @@ footer {
       margin: 0 0 10px 0; }
       #cuerpos2 main div #contentrada {
         margin: 0; }
+      #cuerpos2 main div #d13Modal img, #cuerpos2 main div #dModal img {
+        width: 90%; }
     #cuerpos2 main #titulos2 {
       width: 100%; }
       #cuerpos2 main #titulos2 h2 {
@@ -1779,7 +1779,7 @@ footer {
       justify-content: center;
       align-items: center; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   #cuerpoindex header {
     font-size: 90%; }
     #cuerpoindex header #barrafija {
@@ -1865,7 +1865,7 @@ footer {
       #cuerpoindex main #seccionventa div div img {
         width: 10em;
         height: auto;
-        margin-bottom: 2px; }
+        transform: translateX(20px); }
     #cuerpoindex main #seccionventa div table {
       display: none; }
     #cuerpoindex main #seccionventa #divs3 {
@@ -2348,9 +2348,10 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      #cuerpos4 main div div div div img {
-        width: 100%;
-        margin-top: 5px; }
+      #cuerpos4 main div div div .imgcons1, #cuerpos4 main div div div .imgcons2, #cuerpos4 main div div div .imgcons3, #cuerpos4 main div div div .imgcons4 {
+        display: none; }
+      #cuerpos4 main div div div #tyt {
+        width: 100%; }
     #cuerpos4 main div #linkcomprar {
       max-width: 40%; }
       #cuerpos4 main div #linkcomprar a h4 {
@@ -2575,7 +2576,7 @@ footer {
       justify-content: center;
       align-items: center; } }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
   header {
     font-size: 100%; }
     header #barrafija {
@@ -2627,7 +2628,136 @@ footer {
         animation: none;
         font-size: 400%;
         letter-spacing: 10px;
-        width: 100%; } }
+        width: 100%; }
+  #cuerpos2 header {
+    font-size: 90%; }
+    #cuerpos2 header #barrafija {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #cuerpos2 header #barrafija a {
+        transition: none; }
+        #cuerpos2 header #barrafija a #carrito {
+          width: 80%;
+          height: auto; }
+      #cuerpos2 header #barrafija img {
+        transition: none; }
+      #cuerpos2 header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    #cuerpos2 header #navbarra nav ul {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "nos" "cat" "ven" "con" "come";
+      justify-items: center;
+      align-items: center;
+      margin-top: 10px;
+      transform: translateX(-20px); }
+      #cuerpos2 header #navbarra nav ul li div button {
+        height: 37px;
+        width: auto; }
+      #cuerpos2 header #navbarra nav ul #nos {
+        grid-area: nos; }
+      #cuerpos2 header #navbarra nav ul #cat {
+        grid-area: cat; }
+      #cuerpos2 header #navbarra nav ul #ven {
+        grid-area: ven; }
+      #cuerpos2 header #navbarra nav ul #con {
+        grid-area: con; }
+      #cuerpos2 header #navbarra nav ul #come {
+        grid-area: come; }
+  #cuerpos2 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none; }
+    #cuerpos2 main div {
+      margin: 0 0 10px 0; }
+      #cuerpos2 main div #contentrada {
+        margin: 0; }
+    #cuerpos2 main #titulos2 {
+      width: 100%; }
+      #cuerpos2 main #titulos2 h2 {
+        text-align: center; }
+  #cuerpos3 header {
+    font-size: 90%; }
+    #cuerpos3 header #barrafija {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #cuerpos3 header #barrafija a {
+        transition: none; }
+        #cuerpos3 header #barrafija a #carrito {
+          width: 80%;
+          height: auto; }
+      #cuerpos3 header #barrafija img {
+        transition: none; }
+      #cuerpos3 header #barrafija #logo {
+        display: block;
+        width: 10%;
+        height: auto; }
+    #cuerpos3 header #navbarra nav ul {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "nos" "cat" "ven" "con" "come";
+      justify-items: center;
+      align-items: center;
+      margin-top: 10px;
+      transform: translateX(-20px); }
+      #cuerpos3 header #navbarra nav ul li div button {
+        height: 37px;
+        width: auto; }
+      #cuerpos3 header #navbarra nav ul #nos {
+        grid-area: nos; }
+      #cuerpos3 header #navbarra nav ul #cat {
+        grid-area: cat; }
+      #cuerpos3 header #navbarra nav ul #ven {
+        grid-area: ven; }
+      #cuerpos3 header #navbarra nav ul #con {
+        grid-area: con; }
+      #cuerpos3 header #navbarra nav ul #come {
+        grid-area: come; }
+  #cuerpos3 main div {
+    width: 100%; }
+    #cuerpos3 main div div div p {
+      text-align: justify; }
+    #cuerpos3 main div div div div table {
+      width: 100%;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #cuerpos3 main div div div div table tr:first-child {
+        display: none; }
+      #cuerpos3 main div div div div table tr td:first-child {
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1em; }
+      #cuerpos3 main div div div div table tr td {
+        display: block;
+        text-align: center;
+        margin: 0 !important; }
+      #cuerpos3 main div div div div table tr #criterios {
+        display: none; }
+    #cuerpos3 main div div #imgs3, #cuerpos3 main div div #imgsemA, #cuerpos3 main div div #imgsemB, #cuerpos3 main div div #imgsemC, #cuerpos3 main div div #imgsemD {
+      max-width: 60%; }
+      #cuerpos3 main div div #imgs3 img, #cuerpos3 main div div #imgsemA img, #cuerpos3 main div div #imgsemB img, #cuerpos3 main div div #imgsemC img, #cuerpos3 main div div #imgsemD img {
+        width: 100% !important; }
+    #cuerpos3 main div #linkcomprar {
+      max-width: 40%; }
+      #cuerpos3 main div #linkcomprar a h4 {
+        text-align: center; }
+  #cuerpos3 main #titulos3, #cuerpos3 main #tituloantiguos3 {
+    width: 100%; }
+    #cuerpos3 main #titulos3 h2, #cuerpos3 main #tituloantiguos3 h2 {
+      text-align: center; } }
 
 @media only screen and (min-width: 2560px) {
   header {
